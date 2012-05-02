@@ -1,0 +1,2232 @@
+ [ Kok: biç, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BIRLIKTELIK_LE
+tanrıların
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+tanrıçaların
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanrıça, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: tanrıça, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+yunan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yun, FIIL ]  Ekler: FIIL_DONUSUM_EN
+roma
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: rom, ISIM ]  Ekler: ISIM_YONELME_E
+mitolojisinin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: mitoloji, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_TAMLAMA_IN
+ [ Kok: mitoloji, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+unutulmaz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: unut, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_GENISZAMAN_IR
+ [ Kok: unut, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ
+kahramanlarının
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_TAMLAMA_IN
+muhteşem
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: muhteşem, SIFAT ] 
+panoramasını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: panorama, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+sunuyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sun, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR
+bölümün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bölüm, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: bölüm, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: bölü, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_TAMLAMA_IN
+ [ Kok: böl, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_TAMLAMA_IN
+ [ Kok: böl, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_SEN_IN
+biri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: biri, ISIM ] 
+ [ Kok: bir, SAYI ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: bir, SAYI ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: bir, SAYI ]  Ekler: ISIM_BELIRTME_I
+hazırlanan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hazırla, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+ [ Kok: hazır, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+kısa
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kısa, ISIM ] 
+ [ Kok: kıs, FIIL ]  Ekler: FIIL_YETERSIZLIK_E
+ [ Kok: kıs, FIIL ]  Ekler: FIIL_ISTEK_E
+ [ Kok: kıs, ISIM ]  Ekler: ISIM_YONELME_E
+gerçeklere
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gerçek, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_YONELME_E
+dayalı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dayalı, ISIM ] 
+ [ Kok: daya, FIIL ]  Ekler: FIIL_DONUSUM_ILI
+tanıtım
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanıt, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM
+ [ Kok: tanıt, ISIM ]  Ekler: ISIM_KISI_BEN_IM
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_DONUSUM_IM
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_DONUSUM_IM
+yazıları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yazı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: yazı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: yazı, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+sanat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sanat, ISIM ] 
+eserlerinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: eser, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_KALMA_DE
+sergilenen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sergile, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+ [ Kok: sergi, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+olayları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: olay, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+tanıyabilmeniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SIZ_INIZ
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SIZ_INIZ
+anlayabilmeniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: anla, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ
+ [ Kok: anla, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SIZ_INIZ
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SIZ_INIZ
+karakterleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: karakter, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: karakter, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: karakter, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+anlatıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: anlat, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR
+ [ Kok: anla, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR
+ünlü
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ünlü, ISIM ] 
+ [ Kok: ün, ISIM ]  Ekler: ISIM_BULUNMA_LI
+mitolojik
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: mitolojik, ISIM ] 
+öyküyü
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: öykü, ISIM ]  Ekler: ISIM_BELIRTME_I
+özetliyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: özetle, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR
+ [ Kok: özet, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_SIMDIKIZAMAN_IYOR
+sınırları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sınır, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: sınır, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: sınır, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+çağları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çağ, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: çağ, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: çağ, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+aşan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: aş, FIIL ]  Ekler: FIIL_DONUSUM_EN
+sanatın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sanat, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: sanat, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+güzelliğiyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: güzel, SIFAT ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: güzel, SIFAT ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: güzel, SIFAT ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+mitolojinin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: mitoloji, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: mitoloji, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+büyüleyici
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: büyüle, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI
+ [ Kok: büyü, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_TANIMLAMA_ICI
+dünyasını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dünya, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+keşfedin.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: keşfet, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+resim
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: resim, ISIM ] 
+kaynakçası
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kaynakça, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: kaynakça, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: kaynak, ISIM ]  Ekler: ISIM_GIBI_CE + ISIM_TAMLAMA_I
+venüs
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+doğumu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: doğum, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: doğum, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: doğum, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: doğu, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_BELIRTME_I
+ [ Kok: doğ, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_O_I
+ [ Kok: doğ, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_BELIRTME_I
+python
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+öldüren
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: öldür, FIIL ]  Ekler: FIIL_DONUSUM_EN
+ [ Kok: öl, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_EN
+apollon
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+truva
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+troia
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+düşüşü
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_TAMLAMA_I
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_SAHIPLIK_O_I
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_BELIRTME_I
+yıldırım
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yıldırım, ISIM ] 
+ [ Kok: yıl, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_IM
+fırlatan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: fırla, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_DONUSUM_EN
+ [ Kok: fır, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_DONUSUM_EN
+ [ Kok: fır, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_DONUSUM_EN
+zeus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yayını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yayın, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: yayın, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: yayın, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: yay, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: yay, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: yay, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+büken
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bük, FIIL ]  Ekler: FIIL_DONUSUM_EN
+cupido
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+prometheus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+efsanesi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: efsane, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: efsane, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+neptün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+zaferi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_BELIRTME_I
+ikaros
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+düşüşü
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_TAMLAMA_I
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_SAHIPLIK_O_I
+ [ Kok: düş, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_BELIRTME_I
+theogonia
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+olymposlular
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+zeus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+aphrodite
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+apollon
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+athena
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+önemsiz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: önem, ISIM ]  Ekler: ISIM_YOKLUK_SIZ
+tanrılar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+dionysos
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yarı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yarı, ISIM ] 
+ [ Kok: yar, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: yar, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: yar, ISIM ]  Ekler: ISIM_BELIRTME_I
+tanrılar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+kahramanlar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: kahraman, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+herakles
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+perseus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+theseus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+argonotlar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: argonot, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: argonot, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: argonot, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+troi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+savaı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+odysseus
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+oidipous
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+aeneas
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yazısından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yazı, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: yazı, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+....
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+önce
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: önce, ZAMAN ] 
+ [ Kok: ön, ISIM ]  Ekler: ISIM_GIBI_CE
+ [ Kok: ön, ISIM ]  Ekler: ISIM_TARAFINDAN_CE
+konuyla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: konu, ISIM ]  Ekler: ISIM_BIRLIKTELIK_LE
+ilgili
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ilgi, ISIM ]  Ekler: ISIM_BULUNMA_LI
+garabet
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: garabet, ISIM ] 
+demiştim.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: de, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS + IMEK_HIKAYE_DI + ISIM_KISI_BEN_IM
+haklı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hak, ISIM ]  Ekler: ISIM_BULUNMA_LI
+adam
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: adam, ISIM ] 
+ [ Kok: ada, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM
+yazmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: yaz, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+olayı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: olay, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_BELIRTME_I
+bitirmiş.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bitir, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: bitir, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+kardeşimi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kardeş, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_BELIRTME_I
+bulun
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bulun, FIIL ] 
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EDILGEN_IL
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: bu, ZAMIR ]  Ekler: ISIM_BULUNMA_LI + ISIM_SAHIPLIK_SEN_IN
+bana
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ben, ZAMIR ]  Ekler: ISIM_YONELME_E
+ [ Kok: ban, FIIL ]  Ekler: FIIL_YETERSIZLIK_E
+ [ Kok: ban, FIIL ]  Ekler: FIIL_ISTEK_E
+beşiktaş
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+taki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+çalışma
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çalış, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME
+ [ Kok: çalış, FIIL ]  Ekler: FIIL_DONUSUM_ME
+ [ Kok: çal, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME
+ [ Kok: çal, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_OLUMSUZLUK_ME
+ofisime
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ofis, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_YONELME_E
+alın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: alın, FIIL ] 
+ [ Kok: alın, ISIM ] 
+ [ Kok: al, FIIL ]  Ekler: FIIL_EDILGEN_IL
+ [ Kok: al, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: al, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: al, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+kendisiyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+birkaç
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birkaç, ISIM ] 
+konuyu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: konu, ISIM ]  Ekler: ISIM_BELIRTME_I
+konuşmak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: konuş, FIIL ]  Ekler: FIIL_MASTAR_MEK
+ [ Kok: kon, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_MASTAR_MEK
+isterim.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: isteri, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM
+ [ Kok: iste, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + FIIL_KISI_BEN
+başbakan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: başbakan, ISIM ] 
+....
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+oluum
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yazmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: yaz, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+adam
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: adam, ISIM ] 
+ [ Kok: ada, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM
+adamın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: adam, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: adam, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: ada, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_TAMLAMA_IN
+sınav
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sınav, ISIM ] 
+sınav
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sınav, ISIM ] 
+gezesi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gez, FIIL ]  Ekler: FIIL_DONUSUM_ESI
+geliyo
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+grup
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: grup, ISIM ] 
+liseli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: lise, ISIM ]  Ekler: ISIM_BULUNMA_LI
+m...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+....recep
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: recep, OZEL ] 
+ [ Kok: recep, ISIM ] 
+ofisine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ofis, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_YONELME_E
+ [ Kok: ofis, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_YONELME_E
+ [ Kok: ofis, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+ [ Kok: ofis, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+çağıracakmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çağır, FIIL ]  Ekler: FIIL_GELECEKZAMAN_ECEK + IMEK_RIVAYET_MIS
+evine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: evin, ISIM ]  Ekler: ISIM_YONELME_E
+ [ Kok: ev, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_YONELME_E
+ [ Kok: ev, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_YONELME_E
+ [ Kok: ev, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+ [ Kok: ev, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+gittik
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: git, FIIL ]  Ekler: FIIL_GECMISZAMAN_DI + FIIL_KISI_BIZ
+ [ Kok: git, FIIL ]  Ekler: FIIL_BELIRTME_DIK
+kılıçdaroğlu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+istediğiniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: iste, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ
+ [ Kok: iste, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ
+nesnenin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: nesne, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: nesne, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+boyut
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: boyut, ISIM ] 
+renk
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: renk, ISIM ] 
+ölçek
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ölçek, ISIM ] 
+dönme
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dönme, ISIM ] 
+ [ Kok: dön, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME
+ [ Kok: dön, FIIL ]  Ekler: FIIL_DONUSUM_ME
+eğilme
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: eğil, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME
+ [ Kok: eğil, FIIL ]  Ekler: FIIL_DONUSUM_ME
+ [ Kok: eğ, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_ME
+ [ Kok: eğ, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME
+özelliklerini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I
+değiştirin.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: değiş, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_EMIR_SIZ_IN
+ [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_ETTIRGEN_TIR + FIIL_EMIR_SIZ_IN
+düğmeler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: düğmele, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+ [ Kok: düğme, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: düğme, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: düğme, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+ [ Kok: düğ, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_KISI_ONLAR
+ [ Kok: düğ, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_COGUL_LER
+ [ Kok: düğ, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_KISI_ONLAR_LER
+menüler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: menü, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: menü, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: menü, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+animasyonlar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: animasyon, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: animasyon, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: animasyon, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+arka
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: arka, ISIM ] 
+ [ Kok: ark, ISIM ]  Ekler: ISIM_YONELME_E
+planlar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: planla, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+ [ Kok: plan, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: plan, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: plan, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+etkileşimli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: etkile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_IM + ISIM_BULUNMA_LI
+ [ Kok: etki, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_DONUSUM_IM + ISIM_BULUNMA_LI
+ [ Kok: etki, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_DONUSUM_IM + ISIM_BULUNMA_LI
+çabuk
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çabuk, SIFAT ] 
+yüklenen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yükle, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+ [ Kok: yük, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_DONUSUM_EN
+öğeler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yaratın.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yarat, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: yara, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_EMIR_SIZ_IN
+ [ Kok: yara, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_EMIR_SIZ_IN
+filmlerinize
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: film, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SIZ_INIZ + ISIM_YONELME_E
+resimler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: resimle, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+ [ Kok: resim, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: resim, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: resim, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+videolar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: video, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: video, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: video, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+sesler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sesle, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+ [ Kok: ses, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: ses, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: ses, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+ekleyin.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ekle, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: ek, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EMIR_SIZ_IN
+kaydırılabilen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kay, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_EDILGEN_IL + FIIL_YETENEK_EBIL + FIIL_DONUSUM_EN
+metinler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: metin, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: metin, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: metin, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+ [ Kok: metin, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: metin, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: metin, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+grafikler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: grafik, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: grafik, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: grafik, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+öğeleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+diğer
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: diğer, ISIM ] 
+etkileşim
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: etkile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_IM
+ [ Kok: etki, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_DONUSUM_IM
+ [ Kok: etki, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_DONUSUM_IM
+özelliklerini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: özel, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I
+hızlı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hızlı, SIFAT ] 
+ [ Kok: hız, ISIM ]  Ekler: ISIM_BULUNMA_LI
+şekilde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: şekil, ISIM ]  Ekler: ISIM_KALMA_DE
+yaratmak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yarat, FIIL ]  Ekler: FIIL_MASTAR_MEK
+ [ Kok: yara, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_MASTAR_MEK
+ [ Kok: yara, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_MASTAR_MEK
+bileşenleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bileşen, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: bileşen, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: bileşen, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+ [ Kok: bileş, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: bileş, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: bileş, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_SAHIPLIK_ONLAR_LERI
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_SAHIPLIK_ONLAR_LERI
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: bile, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN + ISIM_SAHIPLIK_ONLAR_LERI
+kullanın.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kullan, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: kul, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_EMIR_SIZ_IN
+normal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: normal, ISIM ] 
+expert
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+modlarla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+programlamayı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: programla, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_BELIRTME_I
+ [ Kok: program, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_DONUSUM_ME + ISIM_BELIRTME_I
+öğrenin.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: öğren, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+arabirimdeki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+araç
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: araç, ISIM ] 
+kutusundaki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kutu, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+ [ Kok: kutu, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+öğeleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+tanıyın.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: tanı, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+yayın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yayın, ISIM ] 
+ [ Kok: yay, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: yay, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: yay, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+duyurusu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: duyuru, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: duyuru, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ndan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+alıntı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: alıntı, ISIM ] 
+ [ Kok: al, FIIL ]  Ekler: FIIL_DONUSUM_INTI
+lordlar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kamarası
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kamara, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: kamara, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+kitabımda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kitap, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_KALMA_DE
+özal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+erdoğan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+çiller
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çil, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: çil, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: çil, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+sezer
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sez, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+kadar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kadar, ZAMAN ] 
+onlarca
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: onlar, ZAMIR ]  Ekler: ISIM_TARAFINDAN_CE
+ [ Kok: o, ZAMIR ]  Ekler: ISIM_COGUL_LER + ISIM_TARAFINDAN_CE
+anının
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: anı, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: anı, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_TAMLAMA_I + ISIM_TAMLAMA_IN
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+parçası
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: parça, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: parça, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+olsam
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ol, FIIL ]  Ekler: FIIL_SART_SE + FIIL_KISI_BEN
+aslında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: asıl, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: asıl, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: asıl, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: asıl, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+ [ Kok: as, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+gerçek
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gerçek, ISIM ] 
+başrol
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: başrol, ISIM ] 
+tarih
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tarih, ISIM ] 
+in...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: in, FIIL ] 
+ [ Kok: in, ISIM ] 
+kitap
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kitap, ISIM ] 
+biraz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: biraz, ISIM ] 
+küçük
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: küçük, ISIM ] 
+adamı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: adam, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: adam, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: adam, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: ada, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_BELIRTME_I
+koca
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: koca, FIIL ] 
+ [ Kok: koca, ISIM ] 
+ [ Kok: koca, FIIL ] 
+dünyaya
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dünya, ISIM ]  Ekler: ISIM_YONELME_E
+sığdırmak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sığ, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_MASTAR_MEK
+istemeyenlere
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: iste, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_DONUSUM_EN + ISIM_COGUL_LER + ISIM_YONELME_E
+karşı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: karşı, ISIM ] 
+itirazın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: itiraz, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: itiraz, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+hikâyesidir...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hikaye, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_TANIMLAMA_DIR
+ [ Kok: hikaye, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_TANIMLAMA_DIR
+talat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T
+atilla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+özal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+döneminden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dönem, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: dönem, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: dönem, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: dönem, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+yana
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yan, FIIL ]  Ekler: FIIL_YETERSIZLIK_E
+ [ Kok: yan, FIIL ]  Ekler: FIIL_ISTEK_E
+ [ Kok: yan, ISIM ]  Ekler: ISIM_YONELME_E
+ [ Kok: ya, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+bilinmeyen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bil, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_DONUSUM_EN
+olayı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: olay, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: olay, ISIM ]  Ekler: ISIM_BELIRTME_I
+yaptığı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+söyleşilerle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: söyleşi, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BIRLIKTELIK_LE
+birlikte
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birlikte, ISIM ] 
+ [ Kok: birlik, ISIM ]  Ekler: ISIM_KALMA_DE
+ [ Kok: bir, SAYI ]  Ekler: ISIM_BULUNMA_LIK + ISIM_KALMA_DE
+ [ Kok: bir, SAYI ]  Ekler: ISIM_DURUM_LIK + ISIM_KALMA_DE
+tarihin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tarihi, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: tarih, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: tarih, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+karanlığından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: karanlık, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: karanlık, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: karanlık, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: karanlık, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_BULUNMA_LIK + ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: kar, FIIL ]  Ekler: FIIL_DONUSUM_EN + ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+çekip
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çek, FIIL ]  Ekler: FIIL_IMSI_IP
+çıkarmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çıkar, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: çıkar, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: çıkar, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+buket
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: buket, ISIM ] 
+çiçek
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çiçek, ISIM ] 
+önümüze
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ön, ISIM ]  Ekler: ISIM_SAHIPLIK_BIZ_IMIZ + ISIM_YONELME_E
+getirmiş.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: getir, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: getir, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+gazeteci
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gazete, ISIM ]  Ekler: ISIM_ILGI_CI
+düşünün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: düşün, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: düşün, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: düşün, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: düş, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_TAMLAMA_IN
+ [ Kok: düş, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: düş, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+özal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+röportaj
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: röportaj, ISIM ] 
+yapmaya
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yap, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_ISTEK_E
+ [ Kok: yap, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_YONELME_E
+giderken
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gider, ISIM ]  Ekler: IMEK_ZAMAN_KEN
+ [ Kok: git, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + IMEK_ZAMAN_KEN
+polisler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: polis, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: polis, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: polis, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+kendisini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+suikastçı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: suikast, ISIM ]  Ekler: ISIM_ILGI_CI
+zannedip
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: zannet, FIIL ]  Ekler: FIIL_IMSI_IP
+kelepçeyi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kelepçe, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: kelep, ISIM ]  Ekler: ISIM_GIBI_CE + ISIM_BELIRTME_I
+takmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tak, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: tak, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: tak, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+tansu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+çiller
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çil, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: çil, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: çil, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+makamında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: makam, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: makam, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: makam, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: makam, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+ [ Kok: maka, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+kavga
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kavga, ISIM ] 
+etmiş
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: et, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: et, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: et, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+birbirlerine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birbir, ZAMIR ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_YONELME_E
+ [ Kok: birbir, ZAMIR ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+ [ Kok: birbir, ZAMIR ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+ [ Kok: birbir, ZAMIR ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_YONELME_E
+girmişler...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gir, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS + FIIL_KISI_ONLAR
+ [ Kok: gir, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS + ISIM_KISI_ONLAR_LER
+ [ Kok: gir, FIIL ]  Ekler: FIIL_DONUSUM_MIS + ISIM_COGUL_LER
+kenan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+evren
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: evren, ISIM ] 
+ [ Kok: evre, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+elindeki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: el, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+ [ Kok: el, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+ [ Kok: el, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+ [ Kok: el, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE + ISIM_BULUNMA_KI
+şemsiye
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: şemsiye, ISIM ] 
+ [ Kok: şemsi, ISIM ]  Ekler: ISIM_YONELME_E
+korkutmuş...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: korkut, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: korkut, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+yandaş
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yandaş, ISIM ] 
+basından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: basın, ISIM ]  Ekler: ISIM_CIKMA_DEN
+ [ Kok: bası, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: bas, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: bas, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: bas, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: bas, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ankara
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+temsilcisi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: temsil, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_SAHIPLIK_O_I
+kendisini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+baykal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+benzettiği
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: benzet, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: benzet, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: benzet, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+ [ Kok: benze, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: benze, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: benze, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+talat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T
+mahkemeye
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: mahkeme, ISIM ]  Ekler: ISIM_YONELME_E
+vermiş...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ver, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: ver, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+tayyip
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+erdoğan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+başkalarının
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: başka, SIFAT ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: başka, SIFAT ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: başka, SIFAT ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_TAMLAMA_IN
+yanında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yan, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: yan, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: yan, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: yan, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+ [ Kok: ya, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: ya, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+gazetenin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gazete, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: gazete, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+köşe
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: köşe, ISIM ] 
+yazarlığını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: yazar, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+teklif
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: teklif, ISIM ] 
+etmiş...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: et, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: et, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+ [ Kok: et, ISIM ]  Ekler: IMEK_RIVAYET_MIS
+fatih
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: fatih, ISIM ] 
+altaylı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kendisine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_YONELME_E
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+telefon
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: telefon, ISIM ] 
+açıp
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: aç, FIIL ]  Ekler: FIIL_IMSI_IP
+sitesinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: site, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: site, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+emin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: emin, ISIM ] 
+ [ Kok: em, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+çölaşan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+yaptığı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: yap, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+röportajı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: röportaj, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: röportaj, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: röportaj, ISIM ]  Ekler: ISIM_BELIRTME_I
+kaldırmasını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kaldır, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: kal, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+istemiş...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: iste, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: iste, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+cumhurbaşkanımız
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: cumhurbaşkanı, ISIM ]  Ekler: ISIM_SAHIPLIK_BIZ_IMIZ
+ahmet
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+necdet
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+sezer
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sez, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+talat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T
+suikastçıların
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: suikast, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: suikast, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+elinden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: el, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: el, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: el, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: el, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+kurtarmış...
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kurtar, FIIL ]  Ekler: FIIL_GECMISZAMAN_MIS
+ [ Kok: kurtar, FIIL ]  Ekler: FIIL_DONUSUM_MIS
+günümüzde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: günü, ISIM ]  Ekler: ISIM_SAHIPLIK_BIZ_IMIZ + ISIM_KALMA_DE
+ [ Kok: gün, ZAMAN ]  Ekler: ISIM_SAHIPLIK_BIZ_IMIZ + ISIM_KALMA_DE
+teknoloji
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: teknoloji, ISIM ] 
+bilim
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bilim, ISIM ] 
+ [ Kok: bili, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM
+ [ Kok: bil, FIIL ]  Ekler: FIIL_DONUSUM_IM
+benzeri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: benzer, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: benzer, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: benzer, ISIM ]  Ekler: ISIM_BELIRTME_I
+görülmemiş
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gör, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_DONUSUM_MIS
+ [ Kok: gör, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_GECMISZAMAN_MIS
+tarzda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tarz, ISIM ]  Ekler: ISIM_KALMA_DE
+gelişmekte
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: geliş, FIIL ]  Ekler: FIIL_MASTAR_MEK + ISIM_KALMA_DE
+ [ Kok: gel, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_MASTAR_MEK + ISIM_KALMA_DE
+değişmektedir.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: değiş, FIIL ]  Ekler: FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+ [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+1960
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+larda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ortaya
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ortay, ISIM ]  Ekler: ISIM_YONELME_E
+ [ Kok: orta, ISIM ]  Ekler: ISIM_YONELME_E
+atılıp
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: atıl, FIIL ]  Ekler: FIIL_IMSI_IP
+ [ Kok: at, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_IMSI_IP
+1970
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+lerde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+geliştirilen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: geliştir, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_EN
+ [ Kok: geliş, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_EDILGEN_IL + FIIL_DONUSUM_EN
+ [ Kok: gel, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_ETTIRGEN_TIR + FIIL_EDILGEN_IL + FIIL_DONUSUM_EN
+post
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: post, ISIM ] 
+modernizm
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+bilginin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bilgin, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: bilgin, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: bilgi, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: bilgi, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+artık
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: artık, ISIM ] 
+ [ Kok: art, FIIL ]  Ekler: FIIL_DONUSUM_IK
+statüsünün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: statü, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_TAMLAMA_IN
+ [ Kok: statü, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+değişikliğe
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: değişik, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_YONELME_E
+ [ Kok: değişik, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_YONELME_E
+ [ Kok: değiş, FIIL ]  Ekler: FIIL_DONUSUM_IK + ISIM_BULUNMA_LIK + ISIM_YONELME_E
+ [ Kok: değiş, FIIL ]  Ekler: FIIL_DONUSUM_IK + ISIM_DURUM_LIK + ISIM_YONELME_E
+ [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_IK + ISIM_BULUNMA_LIK + ISIM_YONELME_E
+ [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_IK + ISIM_DURUM_LIK + ISIM_YONELME_E
+uğradığı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: uğra, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+metalaştığı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: meta, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+iddiasında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: iddia, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: iddia, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+bulunmaktadır.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bulun, FIIL ]  Ekler: FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+arada
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ara, ISIM ]  Ekler: ISIM_KALMA_DE
+fukuyama
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+tarihin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tarihi, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: tarih, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: tarih, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+sonu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: son, SAYI ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: son, SAYI ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: son, SAYI ]  Ekler: ISIM_BELIRTME_I
+adlı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ad, ISIM ]  Ekler: ISIM_BULUNMA_LI
+eserinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: eser, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: eser, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+batılı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: batı, ISIM ]  Ekler: ISIM_BULUNMA_LI
+ [ Kok: bat, FIIL ]  Ekler: FIIL_DONUSUM_ILI
+liberal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: liberal, ISIM ] 
+demokratik
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: demokratik, ISIM ] 
+paradigmanın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: paradigma, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: paradigma, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+diğer
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: diğer, ISIM ] 
+kültürlerin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kültür, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: kültür, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+modelleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: model, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I
+ [ Kok: model, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I
+ [ Kok: model, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI
+karşısında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: karşı, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: karşı, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+kesin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kesin, FIIL ] 
+ [ Kok: kesin, ISIM ] 
+ [ Kok: kes, FIIL ]  Ekler: FIIL_EMIR_SIZ_IN
+ [ Kok: kes, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: kes, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+zaferini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: zafer, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ilan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ilan, ISIM ] 
+etmektedir.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: et, FIIL ]  Ekler: FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+yandan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yan, ISIM ]  Ekler: ISIM_CIKMA_DEN
+ [ Kok: ya, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ünlü
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ünlü, ISIM ] 
+ [ Kok: ün, ISIM ]  Ekler: ISIM_BULUNMA_LI
+eseri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: eser, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: eser, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: eser, ISIM ]  Ekler: ISIM_BELIRTME_I
+uygarlıkların
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: uygar, SIFAT ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: uygar, SIFAT ]  Ekler: ISIM_BULUNMA_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+ [ Kok: uygar, SIFAT ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: uygar, SIFAT ]  Ekler: ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+çatışmasında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çatış, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: çat, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+huntington
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+dünyanın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dünya, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: dünya, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+önemli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: önem, ISIM ]  Ekler: ISIM_BULUNMA_LI
+çekişmelerinin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çekiş, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: çekiş, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: çekiş, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_TAMLAMA_IN
+ [ Kok: çek, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN
+ [ Kok: çek, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: çek, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_TAMLAMA_IN
+kültürel
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kültürel, ISIM ] 
+dinsel
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: din, ISIM ]  Ekler: ISIM_ILISKILI_SEL
+çelişkiler
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çelişki, ISIM ]  Ekler: ISIM_COGUL_LER
+ [ Kok: çelişki, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_GENISZAMAN_IR
+ [ Kok: çelişki, ISIM ]  Ekler: ISIM_KISI_ONLAR_LER
+olduğunu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ol, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: ol, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: ol, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+yüzden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yüzde, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: yüz, SAYI ]  Ekler: ISIM_CIKMA_DEN
+ [ Kok: yüz, SAYI ]  Ekler: SAYI_KESIR_DE + ISIM_SAHIPLIK_SEN_IN
+medeni
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: medeni, ISIM ] 
+çatışmanın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: çatış, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_TAMLAMA_IN
+ [ Kok: çatış, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+ [ Kok: çat, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_TAMLAMA_IN
+ [ Kok: çat, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+kaçınılmazlığını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_OLUMSUZLUK_ME + FIIL_GENISZAMAN_IR + ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: kaçın, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_MEZ + ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ileri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ileri, ISIM ] 
+sürmektedir.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sür, FIIL ]  Ekler: FIIL_MASTAR_MEK + ISIM_KALMA_DE + ISIM_TANIMLAMA_DIR
+kitabın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kitap, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: kitap, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+içinden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: içinde, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: için, ISIM ]  Ekler: ISIM_CIKMA_DEN
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+birkaç
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birkaç, ISIM ] 
+yüzyıllık
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yüzyıl, ISIM ]  Ekler: ISIM_BULUNMA_LIK
+ [ Kok: yüzyıl, ISIM ]  Ekler: ISIM_DURUM_LIK
+zaman
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: zaman, ZAMAN ] 
+dilimi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dilim, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: dilim, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: dilim, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: dil, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_O_I
+ [ Kok: dil, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_BELIRTME_I
+ [ Kok: dil, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM + ISIM_BELIRTME_I
+içinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: içinde, ISIM ] 
+ [ Kok: için, ISIM ]  Ekler: ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+ekonomik
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ekonomik, SIFAT ] 
+toplumsal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: toplum, ISIM ]  Ekler: ISIM_ILISKILI_SEL
+siyasal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: siyasal, ISIM ] 
+ [ Kok: siya, ISIM ]  Ekler: ISIM_ILISKILI_SEL
+dinsel
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: din, ISIM ]  Ekler: ISIM_ILISKILI_SEL
+anlamlarda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: anlam, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_KALMA_DE
+cemaat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: cemaat, ISIM ] 
+bağlılıklarını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_DURUM_LIK + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_DURUM_LIK + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I
+yadsıyarak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yadsı, FIIL ]  Ekler: FIIL_SUREKLILIK_EREK
+yükselen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yüksel, FIIL ]  Ekler: FIIL_DONUSUM_EN
+geçen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: geçen, ISIM ] 
+ [ Kok: geç, FIIL ]  Ekler: FIIL_DONUSUM_EN
+yüzyıldan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yüzyıl, ISIM ]  Ekler: ISIM_CIKMA_DEN
+itibaren
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: itibaren, ISIM ] 
+bireyi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birey, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: birey, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: birey, ISIM ]  Ekler: ISIM_BELIRTME_I
+tanrılaştıran
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_EN
+ [ Kok: tanrı, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_EN
+yüzyılın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yüzyıl, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: yüzyıl, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+sonuyla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: son, SAYI ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: son, SAYI ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE
+sosyal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sosyal, ISIM ] 
+devletin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: devlet, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: devlet, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ [ Kok: dev, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_EMIR_SIZ_IN
+ideolojilerin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ideoloji, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: ideoloji, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+sosyal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sosyal, ISIM ] 
+sınıf
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sınıf, ISIM ] 
+çatışkılarının
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+azından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: azı, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: az, SIFAT ]  Ekler: ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: az, SIFAT ]  Ekler: ISIM_TAMLAMA_I + ISIM_CIKMA_DEN
+ [ Kok: az, SIFAT ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: az, SIFAT ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+görünürde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: görünür, ISIM ]  Ekler: ISIM_KALMA_DE
+gerilemesiyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gerile, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: geri, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_DONUSUM_ME + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+bağlarından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: bağ, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_CIKMA_DEN
+kurtulan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kurtul, FIIL ]  Ekler: FIIL_DONUSUM_EN
+batılı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: batı, ISIM ]  Ekler: ISIM_BULUNMA_LI
+ [ Kok: bat, FIIL ]  Ekler: FIIL_DONUSUM_ILI
+insan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: insan, ISIM ] 
+şimdi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: şimdi, ZAMAN ] 
+kendine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kendi, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+inşa
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: inşa, ISIM ] 
+ettiği
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: et, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: et, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: et, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+özgürlük
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_BULUNMA_LIK
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_DURUM_LIK
+tapınağında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tapınak, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: tapınak, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: tapınak, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: tapınak, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+yalnız
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yalnız, BAGLAC ] 
+ [ Kok: yalnız, SIFAT ] 
+kalmanın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kal, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_TAMLAMA_IN
+ [ Kok: kal, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN
+acısını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: acı, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+dillendiriyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dillen, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_SIMDIKIZAMAN_IYOR
+ [ Kok: dil, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_ETTIRGEN_TIR + FIIL_SIMDIKIZAMAN_IYOR
+masumiyetin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: masumiyet, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: masumiyet, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+ayartıcılığı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ayartı, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I
+ [ Kok: ayartı, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_DURUM_LIK + ISIM_BELIRTME_I
+ [ Kok: ayart, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI + ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I
+ [ Kok: ayart, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI + ISIM_BULUNMA_LIK + ISIM_TAMLAMA_I
+ [ Kok: ayart, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI + ISIM_BULUNMA_LIK + ISIM_BELIRTME_I
+ [ Kok: ayart, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI + ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I
+ [ Kok: ayart, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI + ISIM_DURUM_LIK + ISIM_BELIRTME_I
+esas
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: esas, SIFAT ] 
+olarak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ol, FIIL ]  Ekler: FIIL_SUREKLILIK_EREK
+batı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: batı, ISIM ] 
+ [ Kok: bat, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: bat, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: bat, ISIM ]  Ekler: ISIM_BELIRTME_I
+avrupa
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+odaklanarak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: odakla, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_SUREKLILIK_EREK
+ [ Kok: odak, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_SUREKLILIK_EREK
+modernite
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+içinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: içinde, ISIM ] 
+ [ Kok: için, ISIM ]  Ekler: ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+bireyin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birey, ISIM ]  Ekler: ISIM_TAMLAMA_IN
+ [ Kok: birey, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN
+geldiği
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: gel, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: gel, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: gel, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+noktayı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: nokta, ISIM ]  Ekler: ISIM_BELIRTME_I
+irdeleyen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: irdele, FIIL ]  Ekler: FIIL_DONUSUM_EN
+pascal
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+bruckner
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+inorik
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+anlatımıyla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: anlatım, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: anlatım, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: anlat, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: anla, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_DONUSUM_IM + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+ [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_DONUSUM_IM + ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE
+batılı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: batıl, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: batı, ISIM ]  Ekler: ISIM_BULUNMA_LI
+ [ Kok: bat, FIIL ]  Ekler: FIIL_DONUSUM_ILI
+erkek
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: erkek, ISIM ] 
+kadını
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kadın, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: kadın, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: kadın, ISIM ]  Ekler: ISIM_BELIRTME_I
+ [ Kok: kadı, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+hedef
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hedef, ISIM ] 
+tahtasına
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: tahta, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_YONELME_E
+ [ Kok: tahta, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+oturtuyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: otur, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR
+bireyciliğin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: birey, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN
+ [ Kok: birey, ISIM ]  Ekler: ISIM_ILGI_CI + ISIM_DURUM_LIK + ISIM_TAMLAMA_IN
+içinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: içinde, ISIM ] 
+ [ Kok: için, ISIM ]  Ekler: ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE
+ [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE
+bulunduğu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: bulun, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: bulun, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: bulun, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I
+ [ Kok: bul, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_BELIRTME_DIK + ISIM_BELIRTME_I
+aşamayı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: aşama, ISIM ]  Ekler: ISIM_BELIRTME_I
+başlıca
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: başlı, ISIM ]  Ekler: ISIM_GIBI_CE
+ [ Kok: başlı, ISIM ]  Ekler: ISIM_TARAFINDAN_CE
+ [ Kok: baş, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_TARAFINDAN_CE
+semptomu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: semptom, ISIM ]  Ekler: ISIM_TAMLAMA_I
+ [ Kok: semptom, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I
+ [ Kok: semptom, ISIM ]  Ekler: ISIM_BELIRTME_I
+edimlerin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: edim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: edim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+ [ Kok: et, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_COGUL_LER + ISIM_TAMLAMA_IN
+ [ Kok: et, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN
+sonuçlarından
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sonuç, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: sonuç, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: sonuç, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: sonuç, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_CIKMA_DEN
+kaçmak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: kaç, FIIL ]  Ekler: FIIL_MASTAR_MEK
+olan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ol, FIIL ]  Ekler: FIIL_DONUSUM_EN
+ [ Kok: o, ZAMIR ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N
+hastalık
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: hastalık, ISIM ] 
+ [ Kok: hasta, ISIM ]  Ekler: ISIM_BULUNMA_LIK
+ [ Kok: hasta, ISIM ]  Ekler: ISIM_DURUM_LIK
+olarak
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: ol, FIIL ]  Ekler: FIIL_SUREKLILIK_EREK
+değerlendiren
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: değerlen, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_EN
+ [ Kok: değer, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_ETTIRGEN_TIR + FIIL_DONUSUM_EN
+yazar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: yazar, ISIM ] 
+ [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR
+teşhisini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: teşhis, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_BELIRTME_I
+ [ Kok: teşhis, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I
+ [ Kok: teşhis, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I
+şöyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: şöyle, ISIM ] 
+dile
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: dil, FIIL ]  Ekler: FIIL_YETERSIZLIK_E
+ [ Kok: dil, FIIL ]  Ekler: FIIL_ISTEK_E
+ [ Kok: dile, FIIL ] 
+ [ Kok: dil, ISIM ]  Ekler: ISIM_YONELME_E
+getiriyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: getir, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR
+özgürlüğün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN
+ [ Kok: özgür, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_TAMLAMA_IN
+sıkıntılarına
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: sıkıntı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_YONELME_E
+ [ Kok: sıkıntı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+ [ Kok: sıkıntı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+ [ Kok: sıkıntı, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_YONELME_E
+ [ Kok: sık, FIIL ]  Ekler: FIIL_DONUSUM_INTI + ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_YONELME_E
+ [ Kok: sık, FIIL ]  Ekler: FIIL_DONUSUM_INTI + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_YONELME_E
+ [ Kok: sık, FIIL ]  Ekler: FIIL_DONUSUM_INTI + ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E
+ [ Kok: sık, FIIL ]  Ekler: FIIL_DONUSUM_INTI + ISIM_SAHIPLIK_ONLAR_LERI + ISIM_YONELME_E
+katlanmadan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: katlan, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_OLUMSUZLUK_DEN
+ [ Kok: katlan, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_CIKMA_DEN
+ [ Kok: katla, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_ME + ISIM_CIKMA_DEN
+ [ Kok: katla, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_OLUMSUZLUK_ME + FIIL_OLUMSUZLUK_DEN
+ [ Kok: kat, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_DONUSUM_ME + ISIM_CIKMA_DEN
+ [ Kok: kat, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_OLUMSUZLUK_ME + FIIL_OLUMSUZLUK_DEN
+nimetlerinden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+ [ Kok: nimet, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_CIKMA_DEN
+ [ Kok: nimet, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_CIKMA_DEN
+ [ Kok: nimet, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_CIKMA_DEN
+ [ Kok: nimet, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_CIKMA_DEN
+yararlanmaya
+SELECTOR-> SELECT id,nitelik from nitelikler;

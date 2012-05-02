@@ -1,0 +1,117 @@
+Executor sınıfında sürekli NullPointerException alıyorum.
+Aynı çokluların yüklenip yüklenemediğini bilmiyorum.
+Trim, kökbulma, çekim eklerini atma üzerinde uğraşmam gerekiyor.
+Mümkün olduğunca comment yazmam gerekiyor.
+
+Kategoriler, Yayınevleri, yazarlar ...vs için tutulan listelerin
+ikinci, üçüncü sayfalarına geçmeyi başardım.
+Şimdilik sonuç bir adet BufferedReader nesnesinde tutuluyor.
+BufferedReader nesnesinde tutulan sonucu, parser sınıfındaki methodlara
+webadresi kaynak kodu gibi atayabilmem lazım. 
+
+çarşamba sabahı:
+Bir kategorideki bütün kitapları kısmen alabiliyorum.
+Kategoriler için gönderilen formlar, ayrı bir bilgi taşıyormuş, 
+onları yazarlar, yayınevleri için de bul ve formlara düzgün biçimde eklemenin
+bir yolunu bul.
+
+// kategoriler için şöyle bir şey:
+anne-baba-kitaplari/kategori_urun.asp?tree=01001001
+
+//dizi seçilmemiş yayınevleri için şöyle bir şey:
+can-yayinlari/firma_urun_listele.asp?fid=456&dzid=
+
+//dizi seçilmiş yayınevleri için şöyle bir şey:
+can-yayinlari-anlati-dizisi/firma_urun.asp?fid=456&dzid=9968
+
+//yazarlar için şöyle bir şey:
+andre-gide/urun_liste.asp?kid=1349
+
+//çok satanlar için şöyle bir şey:
+coksatanlar.asp
+
+//yeniler için şöyle bir şey:
+yeniler.asp
+
+Perşembe Sabahı:
+Çarşamba sabahı düşündüğüm şeyi gerçekledim.
+Şimdi bütün veritabanını,tabloları,sütunlarını 
+sınıflar ve attribute'leri olarak tutmak istiyorum.
+Bunu iç içe sınıflar şeklinde yapacağım. 
+//////Bunu yaptım.
+
+06.04.2012 Cuma akşamüstü
+Kategorileri ve yayinevlerini ve geri kalanını çeken sınıfı en az ikiye ayırmak istiyorum.
+Bunu yaparken bir adet base class tanımlayıp, kategoriler ve yayınevlerini çeken 
+sınıflar için kullanmak istiyorum.
+kategori: base Base_Class
+yayinevleri: base Base_Class
+
+13.04.2012 Cuma Akşamüstü
+Yayınevi listesinde bulunmayan yayınevlerini eklemek için bir modül veya kod parçası yaz.
+//Yazdım.
+
+14.04.2012 Cuma gecesi
+ Sanırım kitap ismini alırken bir yerde nullpointer exception verdi. 
+Hangi url'de olduğunu bulmak için url'sini print ettireceğim.
+ Paralelleştirmek için aynı anda farklı listelerden kitapların çekilebilmesini sağlayacağım.
+Bunun için kitapların uygun şekilde bölümlendirilmeleri gerek.
+
+15.04.2012 Pazar pecesi
+Tanıtım yazılarını trim edecek method üzerinde çalışıyorum.
+Kelime sondaysa fiil olarak veya kelimenin sağında nokta varsa isim olarak ekliyor.
+Şimdiki amacım kelimelerin içindeki rakamları çıkarmak.//Yaptım.
+Nitelik olmaya uygun olmayan kelimeleri nasıl belirleyeceğim? //Yaptım.
+Nitelikleri nasıl belirleyeceğim? (isim mi fiil mi?)//[frekansı en yüksek olan(Kelimeler dizisinin ilk elemanını) aldım.]
+
+16.04.2012 Pazartesi Sabahı
+Daha yüksek başarımlı trimler üzerinde çalışacağım.
+Anlamsız sözcük katarlarını en aza indirmeye çalışacağım.
+Edat, ilgeç falan onların gelmemesini sağlamaya çalışacağım.
+Niteliklerin metin içindeki sayılarını hesaplayacağım.
+Bunları tutmak için MAP yapısını kullanmayı düşünüyorum. //Yaptım
+Sonra bunları yayınevleri, yazarlar, konu başlıkları için ayarlayacağım.
+
+17.04.2012 Salı Akşamı
+Tanitim_Yazi sınıfında nitelikler kümesine sürekli nitelik yazılıyor.
+Neden olduğunu bulamadım. 
+Bul.
+
+18.04.2012 Çarşamba Öğlen
+DB sınıfı içindeki sınıflara putter, selector ve mümkünse parserları yedir.
+
+20.04.2012 Cuma Öğlen
+	if (rs_nitelik.wasNull()) satırında bir sorun var.
+		Doğru segmana girmiyor.
+	Fakat yine de bir şekilde yazabiliyor bütün nitelikleri.
+	Bilemedim.
+	GetValue olayını halletmeye çalışıyorum şimdi.
+	
+	
+	28.04.2012
+ERROR: duplicate key value violates unique constraint "yayin_nitelik_pkey"
+  Detail: Key (id_yayin, id_nitelik)=(88, 48100) already exists.
+  
+  Aynı çokluları birkaç defa eklemeye çalışıyor. 
+     Putter sınıfına bak. Sorun ordadır muhtemelen.
+     Aynı çokluların eklenmesini engellemiş olmam gerekiyordu.
+     
+ 29.04.2012 
+   Aynı çoklular hala ekleniyor.
+   //Bu sorunu hallettim.
+   
+  30.04.2012 saat 00:00-00:30 arası
+  yazar_nitelik, kategori_nitelik ve yayinevi_nitelik tablolarını da dolduracağım.
+  
+  30.04.2012 sabah 
+  HashMap(array) hala tabloya eklenmiyor.//eklendi
+  HashMap(array) doğru çalışıyor mu kontrol edeceğim. 
+    Gerçekten nitelikleri doğru sayıyor mu ona bakacağım.
+  yayin_kategori,yazar_yayinevi gibi tabloların doldurulmasını sağlayacağım. //sağladım inşallah
+  
+  31.04.2012 saat 00:45-01.00 arası
+  diziler,//oldu 
+  dizi_yayin,//oldu (test etmedim)
+  yeniler, cok_satanlar, 
+  kategori_nitelik,yayinevi_nitelik,yazar_kategori, 
+  yayinevi_kategori tablolarının oluşturulması lazım

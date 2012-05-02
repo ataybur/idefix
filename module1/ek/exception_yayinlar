@@ -1,0 +1,15 @@
+limit: 1000
+org.postgresql.util.PSQLException: ERROR: column "yayinevi" does not exist
+  Position: 8limit: 1000
+
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+	at database.selector.return_select(selector.java:61)
+	at database.putter.put_in(putter.java:54)
+	at parser.parser.get_kitap_url(parser.java:450)
+	at executer.AlfabeList.executor(AlfabeList.java:61)
+	at executer.AlfabeList.main(AlfabeList.java:79)

@@ -1,0 +1,15 @@
+
+idefix:123456
+javascript:elms=document.getElementsByName("checkableitems[]");for (i=0;i<elms.length;i++)
+{if (elms[i].type="checkbox" )elms[i].click()};
+
+/usr/lib/postgresql/9.1/bin/createdb idefix_db
+/usr/lib/postgresql/9.1/bin/dropdb idefix_db
+
+psql idefix_db
+
+\q : metin dosyasından, psql'den, veritabanından çıkmak için
+\d : veritabanındaki tabloları, ilişkileri listelemek için
+\i : bir metin dosyasında yazan sql komutlarını yürütmek için
+	Örnek:
+	\i /home/ataybur/workspace/module1/sql

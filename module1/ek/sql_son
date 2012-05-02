@@ -1,0 +1,122 @@
+CREATE TABLE kategoriler(
+id bigserial,
+kategori_ust varchar(80) NOT NULL,
+kategori_alt varchar(80) NOT NULL,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
+PRIMARY KEY(id)
+);
+
+CREATE TABLE nitelikler(
+id bigserial,
+nitelik tsquery,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE kategori_nitelik(
+id_kategori bigint NOT NULL REFERENCES kategoriler ON DELETE RESTRICT,
+id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT
+);
+
+CREATE TABLE yayinevleri(
+id bigserial,
+ad varchar(80) NOT NULL,
+urun_sayisi bigint DEFAULT -1,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
+PRIMARY KEY(id)
+);
+
+CREATE TABLE yazarlar(
+id bigserial,
+ad varchar(300) NOT NULL,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
+PRIMARY KEY(id)
+);
+
+CREATE TABLE yayinlar(
+id bigserial,
+ad varchar(300) NOT NULL,
+ad_ikinci varchar(300) DEFAULT '0',
+id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT,
+tanitim_yazi varchar(20000),
+url  varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
+PRIMARY KEY(id)
+);
+
+CREATE TABLE yayin_kategori(
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
+id_kategori bigint NOT NULL REFERENCES kategoriler ON DELETE RESTRICT
+);
+
+
+CREATE TABLE yayin_nitelik(
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
+id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT,
+sayi int DEFAULT -1,
+agirlik int DEFAULT -1,
+PRIMARY KEY(id_yayin,id_nitelik)
+);
+
+CREATE TABLE diziler(
+id bigserial,
+ad_dizi varchar(150) NOT NULL,
+id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT,
+url  varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
+PRIMARY KEY(id)
+);
+
+	CREATE TABLE dizi_yayin(
+	id_dizi bigint NOT NULL REFERENCES diziler ON DELETE RESTRICT,
+	id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT
+	);
+
+CREATE TABLE yayinevi_kategori(
+id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT,
+id_kategori bigint NOT NULL REFERENCES kategoriler ON DELETE RESTRICT
+);
+
+CREATE TABLE yayinevi_nitelik(
+id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT,
+id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT,
+sayi int DEFAULT -1,
+agirlik int DEFAULT -1,
+PRIMARY KEY(id_yayinevi,id_nitelik)
+);
+
+
+CREATE TABLE yazar_kategori(
+id_yazar bigint NOT NULL REFERENCES yazarlar ON DELETE RESTRICT,
+id_kategori bigint NOT NULL REFERENCES kategoriler ON DELETE RESTRICT
+);
+
+
+CREATE TABLE yazar_nitelik(
+id_yazar bigint NOT NULL REFERENCES yazarlar ON DELETE RESTRICT,
+id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT,
+sayi int DEFAULT -1,
+agirlik int DEFAULT -1,
+PRIMARY KEY(id_yazar,id_nitelik)
+);
+
+
+CREATE TABLE yazar_yayin(
+id_yazar bigint NOT NULL REFERENCES yazarlar ON DELETE RESTRICT,
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT
+);
+	
+CREATE TABLE yayin_yayinevi(
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
+id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT
+);
+
+
+CREATE TABLE yeniler(
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
+tarih date DEFAULT CURRENT_DATE
+);
+
+CREATE TABLE cok_satanlar(
+id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
+sira int DEFAULT -1,
+tarih date DEFAULT CURRENT_DATE
+);
+

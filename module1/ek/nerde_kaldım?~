@@ -1,0 +1,56 @@
+Executor sınıfında sürekli NullPointerException alıyorum.
+Aynı çokluların yüklenip yüklenemediğini bilmiyorum.
+Trim, kökbulma, çekim eklerini atma üzerinde uğraşmam gerekiyor.
+Mümkün olduğunca comment yazmam gerekiyor.
+
+Kategoriler, Yayınevleri, yazarlar ...vs için tutulan listelerin
+ikinci, üçüncü sayfalarına geçmeyi başardım.
+Şimdilik sonuç bir adet BufferedReader nesnesinde tutuluyor.
+BufferedReader nesnesinde tutulan sonucu, parser sınıfındaki methodlara
+webadresi kaynak kodu gibi atayabilmem lazım. 
+
+çarşamba sabahı:
+Bir kategorideki bütün kitapları kısmen alabiliyorum.
+Kategoriler için gönderilen formlar, ayrı bir bilgi taşıyormuş, 
+onları yazarlar, yayınevleri için de bul ve formlara düzgün biçimde eklemenin
+bir yolunu bul.
+
+// kategoriler için şöyle bir şey:
+anne-baba-kitaplari/kategori_urun.asp?tree=01001001
+
+//dizi seçilmemiş yayınevleri için şöyle bir şey:
+can-yayinlari/firma_urun_listele.asp?fid=456&dzid=
+
+//dizi seçilmiş yayınevleri için şöyle bir şey:
+can-yayinlari-anlati-dizisi/firma_urun.asp?fid=456&dzid=9968
+
+//yazarlar için şöyle bir şey:
+andre-gide/urun_liste.asp?kid=1349
+
+//çok satanlar için şöyle bir şey:
+coksatanlar.asp
+
+//yeniler için şöyle bir şey:
+yeniler.asp
+
+Perşembe Sabahı:
+Çarşamba sabahı düşündüğüm şeyi gerçekledim.
+Şimdi bütün veritabanını,tabloları,sütunlarını 
+sınıflar ve attribute'leri olarak tutmak istiyorum.
+Bunu iç içe sınıflar şeklinde yapacağım. 
+//////Bunu yaptım.
+
+06.04.2012 Cuma akşamüstü
+Kategorileri ve yayinevlerini ve geri kalanını çeken sınıfı en az ikiye ayırmak istiyorum.
+Bunu yaparken bir adet base class tanımlayıp, kategoriler ve yayınevlerini çeken 
+sınıflar için kullanmak istiyorum.
+kategori: base Base_Class
+yayinevleri: base Base_Class
+
+13.04.2012 Cuma Akşamüstü
+Yayınevi listesinde bulunmayan yayınevlerini eklemek için bir modül veya kod parçası yaz.
+//Yazdım.
+
+14.04.2012 Cuma gecesi
+
+  

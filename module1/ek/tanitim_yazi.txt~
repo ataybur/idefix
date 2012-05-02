@@ -1,0 +1,579 @@
+SELECTOR-> SELECT tanitim_yazi from yayinlar limit 1 offset 78;
+db is: idefix_db, tb is: yayinlar
+nitelik.toString(): çocuğunuz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: çocuk ISIM YUM  tip: ISIM
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ kök: çocuk ISIM YUM  tip: ISIM
+nitelik.toString(): yapma
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yap, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME kök: yap FIIL GEN  tip: FIIL
+kelime:  [ Kok: yap, FIIL ]  Ekler: FIIL_DONUSUM_ME kök: yap FIIL GEN  tip: FIIL
+nitelik.toString(): dediğiniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: de, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: de FIIL FIIL_KOK_BOZULMASI  tip: FIIL
+kelime:  [ Kok: de, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ kök: de FIIL FIIL_KOK_BOZULMASI  tip: FIIL
+nitelik.toString(): şeyi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: şey, ISIM ]  Ekler: ISIM_TAMLAMA_I kök: şey ISIM  tip: ISIM
+kelime:  [ Kok: şey, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I kök: şey ISIM  tip: ISIM
+kelime:  [ Kok: şey, ISIM ]  Ekler: ISIM_BELIRTME_I kök: şey ISIM  tip: ISIM
+nitelik.toString(): gözünüzün
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: göz, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ + ISIM_TAMLAMA_IN kök: göz ISIM  tip: ISIM
+nitelik.toString(): içine
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: için, ISIM ]  Ekler: ISIM_YONELME_E kök: için ISIM  tip: ISIM
+kelime:  [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_YONELME_E kök: iç ISIM  tip: ISIM
+kelime:  [ Kok: iç, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_YONELME_E kök: iç ISIM  tip: ISIM
+kelime:  [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_YONELME_E kök: iç ISIM  tip: ISIM
+kelime:  [ Kok: iç, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_YONELME_E kök: iç ISIM  tip: ISIM
+nitelik.toString(): baka
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_YETERSIZLIK_E kök: bak FIIL GEN  tip: FIIL
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_ISTEK_E kök: bak FIIL GEN  tip: FIIL
+nitelik.toString(): baka
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_YETERSIZLIK_E kök: bak FIIL GEN  tip: FIIL
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_ISTEK_E kök: bak FIIL GEN  tip: FIIL
+nitelik.toString(): yapıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yap, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: yap FIIL GEN  tip: FIIL
+nitelik.toString(): yemeğini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yemek, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_BELIRTME_I kök: yemek ISIM YUM  tip: ISIM
+kelime:  [ Kok: yemek, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I kök: yemek ISIM YUM  tip: ISIM
+kelime:  [ Kok: yemek, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I kök: yemek ISIM YUM  tip: ISIM
+nitelik.toString(): yemiyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: ye, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_SIMDIKIZAMAN_IYOR kök: ye FIIL FIIL_KOK_BOZULMASI  tip: FIIL
+nitelik.toString(): yemeğiyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yemek, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE kök: yemek ISIM YUM  tip: ISIM
+kelime:  [ Kok: yemek, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE kök: yemek ISIM YUM  tip: ISIM
+nitelik.toString(): oynuyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: oyna, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: oyna FIIL SDK_ZAMAN  tip: FIIL
+nitelik.toString(): alışverişe
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: alışveriş, ISIM ]  Ekler: ISIM_YONELME_E kök: alışveriş ISIM  tip: ISIM
+nitelik.toString(): çıktığınızda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çık, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ + ISIM_KALMA_DE kök: çık FIIL  tip: FIIL
+nitelik.toString(): isterim
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: isteri, ISIM ]  Ekler: ISIM_SAHIPLIK_BEN_IM kök: isteri ISIM  tip: ISIM
+kelime:  [ Kok: iste, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + FIIL_KISI_BEN kök: iste FIIL SDK_ZAMAN  tip: FIIL
+nitelik.toString(): işte
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: işte, ISIM ]  kök: işte ISIM YAL  tip: ISIM
+kelime:  [ Kok: iş, ISIM ]  Ekler: ISIM_KALMA_DE kök: iş ISIM  tip: ISIM
+nitelik.toString(): diye
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: diye, ISIM ]  kök: diye ISIM YAL  tip: ISIM
+kelime:  [ Kok: de, FIIL ]  Ekler: FIIL_ISTEK_E kök: de FIIL FIIL_KOK_BOZULMASI  tip: FIIL
+nitelik.toString(): tutturuyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: tut, FIIL ]  Ekler: FIIL_ETTIRGEN_TIR + FIIL_SIMDIKIZAMAN_IYOR kök: tut FIIL GEN  tip: FIIL
+nitelik.toString(): durmadan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: dur, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_OLUMSUZLUK_DEN kök: dur FIIL  tip: FIIL
+kelime:  [ Kok: dur, FIIL ]  Ekler: FIIL_DONUSUM_ME + ISIM_CIKMA_DEN kök: dur FIIL  tip: FIIL
+nitelik.toString(): sorduğu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sor, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_TAMLAMA_I kök: sor FIIL GEN  tip: FIIL
+kelime:  [ Kok: sor, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_O_I kök: sor FIIL GEN  tip: FIIL
+kelime:  [ Kok: sor, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_BELIRTME_I kök: sor FIIL GEN  tip: FIIL
+nitelik.toString(): sorularla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: soru, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BIRLIKTELIK_LE kök: soru ISIM  tip: ISIM
+nitelik.toString(): sizi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: siz, ZAMIR ]  Ekler: ISIM_SAHIPLIK_O_I kök: siz ZAMIR ZAMIR_IN  tip: ZAMIR
+kelime:  [ Kok: siz, ZAMIR ]  Ekler: ISIM_TAMLAMA_I kök: siz ZAMIR ZAMIR_IN  tip: ZAMIR
+kelime:  [ Kok: siz, ZAMIR ]  Ekler: ISIM_BELIRTME_I kök: siz ZAMIR ZAMIR_IN  tip: ZAMIR
+nitelik.toString(): bunaltıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: bunal, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR kök: bunal FIIL  tip: FIIL
+nitelik.toString(): yalan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yalan, ISIM ]  kök: yalan ISIM  tip: ISIM
+kelime:  [ Kok: yala, FIIL ]  Ekler: FIIL_EDILGENSESLI_N kök: yala FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: ya, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N kök: ya ISIM YAL  tip: ISIM
+nitelik.toString(): söylüyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: söyle, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: söyle FIIL SDK_ZAMAN  tip: FIIL
+nitelik.toString(): başkalarının
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: başka, SIFAT ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_TAMLAMA_IN kök: başka SIFAT  tip: SIFAT
+kelime:  [ Kok: başka, SIFAT ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN kök: başka SIFAT  tip: SIFAT
+kelime:  [ Kok: başka, SIFAT ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_TAMLAMA_IN kök: başka SIFAT  tip: SIFAT
+nitelik.toString(): yanında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yan, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: yan ISIM  tip: ISIM
+kelime:  [ Kok: yan, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE kök: yan ISIM  tip: ISIM
+kelime:  [ Kok: yan, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE kök: yan ISIM  tip: ISIM
+kelime:  [ Kok: yan, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: yan ISIM  tip: ISIM
+kelime:  [ Kok: ya, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: ya ISIM YAL  tip: ISIM
+kelime:  [ Kok: ya, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: ya ISIM YAL  tip: ISIM
+nitelik.toString(): uslu
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: uslu, SIFAT ]  kök: uslu SIFAT  tip: SIFAT
+kelime:  [ Kok: us, ISIM ]  Ekler: ISIM_BULUNMA_LI kök: us ISIM  tip: ISIM
+nitelik.toString(): dururken
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: dur, FIIL ]  Ekler: FIIL_GENISZAMAN_IR + IMEK_ZAMAN_KEN kök: dur FIIL  tip: FIIL
+nitelik.toString(): sizin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: siz, ZAMIR ]  Ekler: ISIM_TAMLAMA_IN kök: siz ZAMIR ZAMIR_IN  tip: ZAMIR
+kelime:  [ Kok: siz, ZAMIR ]  Ekler: ISIM_SAHIPLIK_SEN_IN kök: siz ZAMIR ZAMIR_IN  tip: ZAMIR
+nitelik.toString(): yanınızda
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yan, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ + ISIM_KALMA_DE kök: yan ISIM  tip: ISIM
+nitelik.toString(): azıtıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: azıt, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: azıt FIIL  tip: FIIL
+nitelik.toString(): çocuğunuzun
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ + ISIM_TAMLAMA_IN kök: çocuk ISIM YUM  tip: ISIM
+nitelik.toString(): sıkıcı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sıkıcı, SIFAT ]  kök: sıkıcı SIFAT  tip: SIFAT
+kelime:  [ Kok: sıkı, SIFAT ]  Ekler: ISIM_ILGI_CI kök: sıkı SIFAT  tip: SIFAT
+kelime:  [ Kok: sık, FIIL ]  Ekler: FIIL_TANIMLAMA_ICI kök: sık FIIL GEN  tip: FIIL
+nitelik.toString(): davranışları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: davran, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_COGUL_LER + ISIM_BELIRTME_I kök: davran FIIL  tip: FIIL
+kelime:  [ Kok: davran, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: davran FIIL  tip: FIIL
+kelime:  [ Kok: davran, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_SAHIPLIK_ONLAR_LERI kök: davran FIIL  tip: FIIL
+nitelik.toString(): aslında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: asıl, ISIM ]  Ekler: ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: asıl ISIM DUS  tip: ISIM
+kelime:  [ Kok: asıl, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_KALMA_DE kök: asıl ISIM DUS  tip: ISIM
+kelime:  [ Kok: asıl, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE kök: asıl ISIM DUS  tip: ISIM
+kelime:  [ Kok: asıl, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: asıl ISIM DUS  tip: ISIM
+kelime:  [ Kok: as, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: as ISIM  tip: ISIM
+nitelik.toString(): tahmin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: tahmin, ISIM ]  kök: tahmin ISIM  tip: ISIM
+nitelik.toString(): etmediğiniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: et, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: et FIIL GEN YUM  tip: FIIL
+kelime:  [ Kok: et, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ kök: et FIIL GEN YUM  tip: FIIL
+nitelik.toString(): nedenlerden
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: neden, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_CIKMA_DEN kök: neden ISIM  tip: ISIM
+nitelik.toString(): kaynaklanıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kaynaklan, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: kaynaklan FIIL  tip: FIIL
+kelime:  [ Kok: kaynak, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N + FIIL_SIMDIKIZAMAN_IYOR kök: kaynak ISIM YUM  tip: ISIM
+nitelik.toString(): olabilir.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: ol, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_GENISZAMAN_IR kök: ol FIIL  tip: FIIL
+nitelik.toString(): kitap
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kitap, ISIM ]  kök: kitap ISIM YUM  tip: ISIM
+nitelik.toString(): gücünüzle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: güç, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ + ISIM_BIRLIKTELIK_LE kök: güç ISIM YUM  tip: ISIM
+nitelik.toString(): ittiğiniz
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: it, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: it FIIL GEN  tip: FIIL
+kelime:  [ Kok: it, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ kök: it FIIL GEN  tip: FIIL
+nitelik.toString(): halde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: hal, ISIM ]  Ekler: ISIM_KALMA_DE kök: hal ISIM TERS  tip: ISIM
+kelime:  [ Kok: hal, ISIM ]  Ekler: ISIM_KALMA_DE kök: hal ISIM TERS  tip: ISIM
+nitelik.toString(): açamadığınız
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: aç, FIIL ]  Ekler: FIIL_YETERSIZLIK_E + FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: aç FIIL GEN  tip: FIIL
+kelime:  [ Kok: aç, FIIL ]  Ekler: FIIL_YETERSIZLIK_E + FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ kök: aç FIIL GEN  tip: FIIL
+kelime:  [ Kok: aç, FIIL ]  Ekler: FIIL_ISTEK_E + FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: aç FIIL GEN  tip: FIIL
+kelime:  [ Kok: aç, FIIL ]  Ekler: FIIL_ISTEK_E + FIIL_OLUMSUZLUK_ME + FIIL_BELIRTME_DIK + ISIM_SAHIPLIK_SIZ_INIZ kök: aç FIIL GEN  tip: FIIL
+nitelik.toString(): kapıları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kapı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I kök: kapı ISIM  tip: ISIM
+kelime:  [ Kok: kapı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: kapı ISIM  tip: ISIM
+kelime:  [ Kok: kapı, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI kök: kapı ISIM  tip: ISIM
+nitelik.toString(): belki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: belki, ISIM ]  kök: belki ISIM YAL  tip: ISIM
+nitelik.toString(): sadece
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sadece, ISIM ]  kök: sadece ISIM  tip: ISIM
+kelime:  [ Kok: sade, ISIM ]  Ekler: ISIM_GIBI_CE kök: sade ISIM  tip: ISIM
+kelime:  [ Kok: sade, ISIM ]  Ekler: ISIM_TARAFINDAN_CE kök: sade ISIM  tip: ISIM
+nitelik.toString(): çekerek
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çek, FIIL ]  Ekler: FIIL_SUREKLILIK_EREK kök: çek FIIL GEN  tip: FIIL
+nitelik.toString(): kolayca
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kolay, ISIM ]  Ekler: ISIM_GIBI_CE kök: kolay ISIM  tip: ISIM
+kelime:  [ Kok: kolay, ISIM ]  Ekler: ISIM_TARAFINDAN_CE kök: kolay ISIM  tip: ISIM
+nitelik.toString(): açabileceğinizi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: aç, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_SAHIPLIK_SIZ_INIZ + ISIM_BELIRTME_I kök: aç FIIL GEN  tip: FIIL
+nitelik.toString(): gösteriyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: göster, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: göster FIIL  tip: FIIL
+nitelik.toString(): kitapları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I kök: kitap ISIM YUM  tip: ISIM
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: kitap ISIM YUM  tip: ISIM
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI kök: kitap ISIM YUM  tip: ISIM
+nitelik.toString(): dile
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: dil, FIIL ]  Ekler: FIIL_YETERSIZLIK_E kök: dil FIIL GEN  tip: FIIL
+kelime:  [ Kok: dil, FIIL ]  Ekler: FIIL_ISTEK_E kök: dil FIIL GEN  tip: FIIL
+kelime:  [ Kok: dile, FIIL ]  kök: dile FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: dil, ISIM ]  Ekler: ISIM_YONELME_E kök: dil ISIM  tip: ISIM
+nitelik.toString(): çevrilen
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çevrile, FIIL ]  Ekler: FIIL_EDILGENSESLI_N kök: çevrile FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: çevri, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N kök: çevri ISIM  tip: ISIM
+kelime:  [ Kok: çevir, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_EN kök: çevir FIIL DUS_FI  tip: FIIL
+nitelik.toString(): tanınmış
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: tanı, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_MIS kök: tanı FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: tanı, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_GECMISZAMAN_MIS kök: tanı FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: tanı, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + IMEK_RIVAYET_MIS kök: tanı ISIM  tip: ISIM
+kelime:  [ Kok: tanı, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_DONUSUM_MIS kök: tanı FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: tanı, FIIL ]  Ekler: FIIL_EDILGENSESLI_N + FIIL_GECMISZAMAN_MIS kök: tanı FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: tan, ISIM ]  Ekler: ISIM_TAMLAMA_IN + IMEK_RIVAYET_MIS kök: tan ISIM  tip: ISIM
+kelime:  [ Kok: tan, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + IMEK_RIVAYET_MIS kök: tan ISIM  tip: ISIM
+kelime:  [ Kok: ta, ISIM ]  Ekler: ISIM_TAMLAMA_IN + IMEK_RIVAYET_MIS kök: ta ISIM YAL  tip: ISIM
+kelime:  [ Kok: ta, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_TAMLAMA_IN + IMEK_RIVAYET_MIS kök: ta ISIM YAL  tip: ISIM
+nitelik.toString(): yazar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yazar, ISIM ]  kök: yazar ISIM  tip: ISIM
+kelime:  [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR kök: yaz FIIL GEN  tip: FIIL
+nitelik.toString(): ısabelle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+nitelik.toString(): fillozat
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+nitelik.toString(): çocukluğun
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN kök: çocuk ISIM YUM  tip: ISIM
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN kök: çocuk ISIM YUM  tip: ISIM
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN kök: çocuk ISIM YUM  tip: ISIM
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_TAMLAMA_IN kök: çocuk ISIM YUM  tip: ISIM
+nitelik.toString(): yıllarında
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yıl, ZAMAN ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: yıl ZAMAN  tip: ZAMAN
+kelime:  [ Kok: yıl, ZAMAN ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE kök: yıl ZAMAN  tip: ZAMAN
+kelime:  [ Kok: yıl, ZAMAN ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: yıl ZAMAN  tip: ZAMAN
+kelime:  [ Kok: yıl, ZAMAN ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_KALMA_DE kök: yıl ZAMAN  tip: ZAMAN
+nitelik.toString(): karşılaşılan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: karşılaş, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_DONUSUM_EN kök: karşılaş FIIL  tip: FIIL
+kelime:  [ Kok: karşıla, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_EDILGEN_IL + FIIL_DONUSUM_EN kök: karşıla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: karşı, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_EDILGEN_IL + FIIL_DONUSUM_EN kök: karşı ISIM  tip: ISIM
+kelime:  [ Kok: karşı, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_EDILGEN_IL + FIIL_DONUSUM_EN kök: karşı ISIM  tip: ISIM
+nitelik.toString(): sorunlara
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sorun, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_YONELME_E kök: sorun ISIM  tip: ISIM
+nitelik.toString(): farklı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: fark, ISIM ]  Ekler: ISIM_BULUNMA_LI kök: fark ISIM  tip: ISIM
+nitelik.toString(): açılardan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: açı, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_CIKMA_DEN kök: açı ISIM  tip: ISIM
+nitelik.toString(): yaklaşıyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yaklaş, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: yaklaş FIIL  tip: FIIL
+nitelik.toString(): anne
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: anne, ISIM ]  kök: anne ISIM  tip: ISIM
+nitelik.toString(): babasıyla
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: baba, ISIM ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE kök: baba ISIM  tip: ISIM
+kelime:  [ Kok: baba, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE kök: baba ISIM  tip: ISIM
+nitelik.toString(): aynı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: aynı, ISIM ]  kök: aynı ISIM  tip: ISIM
+kelime:  [ Kok: ayn, ISIM ]  Ekler: ISIM_TAMLAMA_I kök: ayn ISIM  tip: ISIM
+kelime:  [ Kok: ayn, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I kök: ayn ISIM  tip: ISIM
+kelime:  [ Kok: ayn, ISIM ]  Ekler: ISIM_BELIRTME_I kök: ayn ISIM  tip: ISIM
+nitelik.toString(): mesleği
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: meslek, ISIM ]  Ekler: ISIM_TAMLAMA_I kök: meslek ISIM YUM  tip: ISIM
+kelime:  [ Kok: meslek, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I kök: meslek ISIM YUM  tip: ISIM
+kelime:  [ Kok: meslek, ISIM ]  Ekler: ISIM_BELIRTME_I kök: meslek ISIM YUM  tip: ISIM
+nitelik.toString(): paylaşan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: paylaş, FIIL ]  Ekler: FIIL_DONUSUM_EN kök: paylaş FIIL  tip: FIIL
+kelime:  [ Kok: payla, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN kök: payla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: pay, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_DONUSUM_EN kök: pay ISIM  tip: ISIM
+kelime:  [ Kok: pay, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_DONUSUM_EN kök: pay ISIM  tip: ISIM
+nitelik.toString(): deneyimli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: deneyim, ISIM ]  Ekler: ISIM_BULUNMA_LI kök: deneyim ISIM  tip: ISIM
+nitelik.toString(): psikolog
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: psikolog, ISIM ]  kök: psikolog ISIM  tip: ISIM
+nitelik.toString(): çocuk
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çocuk, ISIM ]  kök: çocuk ISIM YUM  tip: ISIM
+nitelik.toString(): annesi
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: anne, ISIM ]  Ekler: ISIM_TAMLAMA_I kök: anne ISIM  tip: ISIM
+kelime:  [ Kok: anne, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I kök: anne ISIM  tip: ISIM
+nitelik.toString(): olan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: ol, FIIL ]  Ekler: FIIL_DONUSUM_EN kök: ol FIIL  tip: FIIL
+kelime:  [ Kok: o, ZAMIR ]  Ekler: ISIM_DONUSUM_LE + FIIL_EDILGENSESLI_N kök: o ZAMIR ZAMIR_SESLI_OZEL ZAMIR_IN  tip: ZAMIR
+nitelik.toString(): yazar
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yazar, ISIM ]  kök: yazar ISIM  tip: ISIM
+kelime:  [ Kok: yaz, FIIL ]  Ekler: FIIL_GENISZAMAN_IR kök: yaz FIIL GEN  tip: FIIL
+nitelik.toString(): mesleki
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: mesleki, ISIM ]  kök: mesleki ISIM  tip: ISIM
+nitelik.toString(): kişisel
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kişi, ISIM ]  Ekler: ISIM_ILISKILI_SEL kök: kişi ISIM  tip: ISIM
+nitelik.toString(): deneyimlerini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: deneyim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I kök: deneyim ISIM  tip: ISIM
+kelime:  [ Kok: deneyim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I kök: deneyim ISIM  tip: ISIM
+kelime:  [ Kok: deneyim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I kök: deneyim ISIM  tip: ISIM
+kelime:  [ Kok: deneyim, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I kök: deneyim ISIM  tip: ISIM
+nitelik.toString(): paylaşıyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: paylaş, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: paylaş FIIL  tip: FIIL
+kelime:  [ Kok: payla, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_SIMDIKIZAMAN_IYOR kök: payla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: pay, ISIM ]  Ekler: ISIM_DONUSUM_LE + FIIL_BERABERLIK_IS + FIIL_SIMDIKIZAMAN_IYOR kök: pay ISIM  tip: ISIM
+kelime:  [ Kok: pay, ISIM ]  Ekler: ISIM_DONUSUM_LES + FIIL_SIMDIKIZAMAN_IYOR kök: pay ISIM  tip: ISIM
+nitelik.toString(): sorunların
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sorun, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN kök: sorun ISIM  tip: ISIM
+kelime:  [ Kok: sorun, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN kök: sorun ISIM  tip: ISIM
+nitelik.toString(): nedenlerini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: neden, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I kök: neden ISIM  tip: ISIM
+kelime:  [ Kok: neden, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I kök: neden ISIM  tip: ISIM
+kelime:  [ Kok: neden, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I kök: neden ISIM  tip: ISIM
+kelime:  [ Kok: neden, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI + ISIM_BELIRTME_I kök: neden ISIM  tip: ISIM
+nitelik.toString(): bunlara
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: bu, ZAMIR ]  Ekler: ISIM_COGUL_LER + ISIM_YONELME_E kök: bu ZAMIR ZAMIR_SESLI_OZEL ZAMIR_IN  tip: ZAMIR
+nitelik.toString(): nasıl
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: nasıl, SIFAT ]  kök: nasıl SIFAT  tip: SIFAT
+nitelik.toString(): yaklaşılabileceğini
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yaklaş, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_SAHIPLIK_O_I + ISIM_BELIRTME_I kök: yaklaş FIIL  tip: FIIL
+kelime:  [ Kok: yaklaş, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_SAHIPLIK_SEN_IN + ISIM_BELIRTME_I kök: yaklaş FIIL  tip: FIIL
+kelime:  [ Kok: yaklaş, FIIL ]  Ekler: FIIL_EDILGEN_IL + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_TAMLAMA_IN + ISIM_BELIRTME_I kök: yaklaş FIIL  tip: FIIL
+nitelik.toString(): anouk
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+nitelik.toString(): dubois
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+nitelik.toString(): sevimli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sevimli, SIFAT ]  kök: sevimli SIFAT  tip: SIFAT
+kelime:  [ Kok: sevim, ISIM ]  Ekler: ISIM_BULUNMA_LI kök: sevim ISIM  tip: ISIM
+kelime:  [ Kok: sev, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_BULUNMA_LI kök: sev FIIL GEN  tip: FIIL
+nitelik.toString(): çizimleri
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çizim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I kök: çizim ISIM  tip: ISIM
+kelime:  [ Kok: çizim, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: çizim ISIM  tip: ISIM
+kelime:  [ Kok: çizim, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI kök: çizim ISIM  tip: ISIM
+kelime:  [ Kok: çiz, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_COGUL_LER + ISIM_BELIRTME_I kök: çiz FIIL GEN  tip: FIIL
+kelime:  [ Kok: çiz, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: çiz FIIL GEN  tip: FIIL
+kelime:  [ Kok: çiz, FIIL ]  Ekler: FIIL_DONUSUM_IM + ISIM_SAHIPLIK_ONLAR_LERI kök: çiz FIIL GEN  tip: FIIL
+nitelik.toString(): eşliğinde
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_TAMLAMA_I + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_BULUNMA_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_O_I + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_SAHIPLIK_SEN_IN + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+kelime:  [ Kok: eş, ISIM ]  Ekler: ISIM_DURUM_LIK + ISIM_TAMLAMA_IN + ISIM_KALMA_DE kök: eş ISIM  tip: ISIM
+nitelik.toString(): herkesin
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: herkes, ZAMIR ]  Ekler: ISIM_TAMLAMA_IN kök: herkes ZAMIR ZAMIR_IN  tip: ZAMIR
+kelime:  [ Kok: herkes, ZAMIR ]  Ekler: ISIM_SAHIPLIK_SEN_IN kök: herkes ZAMIR ZAMIR_IN  tip: ZAMIR
+kelime:  [ Kok: herk, ISIM ]  Ekler: ISIM_YONELME_E + ISIM_KISI_SEN_SIN kök: herk ISIM  tip: ISIM
+nitelik.toString(): anlayabileceği
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: anla, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_TAMLAMA_I kök: anla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: anla, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_SAHIPLIK_O_I kök: anla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: anla, FIIL ]  Ekler: FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_BELIRTME_I kök: anla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_TAMLAMA_I kök: an ZAMAN  tip: ZAMAN
+kelime:  [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_SAHIPLIK_O_I kök: an ZAMAN  tip: ZAMAN
+kelime:  [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_YETENEK_EBIL + FIIL_DONUSUM_ECEK + ISIM_BELIRTME_I kök: an ZAMAN  tip: ZAMAN
+nitelik.toString(): yalın
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yalın, ISIM ]  kök: yalın ISIM  tip: ISIM
+kelime:  [ Kok: yalı, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN kök: yalı ISIM  tip: ISIM
+kelime:  [ Kok: yal, ISIM ]  Ekler: ISIM_TAMLAMA_IN kök: yal ISIM  tip: ISIM
+kelime:  [ Kok: yal, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN kök: yal ISIM  tip: ISIM
+kelime:  [ Kok: ya, ISIM ]  Ekler: ISIM_BULUNMA_LI + ISIM_SAHIPLIK_SEN_IN kök: ya ISIM YAL  tip: ISIM
+nitelik.toString(): dille
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: dil, ISIM ]  Ekler: ISIM_DONUSUM_LE kök: dil ISIM  tip: ISIM
+kelime:  [ Kok: dil, ISIM ]  Ekler: ISIM_BIRLIKTELIK_LE kök: dil ISIM  tip: ISIM
+nitelik.toString(): anlatıyor
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: anlat, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: anlat FIIL  tip: FIIL
+kelime:  [ Kok: anla, FIIL ]  Ekler: FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR kök: anla FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: an, ZAMAN ]  Ekler: ISIM_DONUSUM_LE + FIIL_OLDURGAN_T + FIIL_SIMDIKIZAMAN_IYOR kök: an ZAMAN  tip: ZAMAN
+nitelik.toString(): çeşitli
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çeşitli, ISIM ]  kök: çeşitli ISIM  tip: ISIM
+kelime:  [ Kok: çeşit, ISIM ]  Ekler: ISIM_BULUNMA_LI kök: çeşit ISIM YUM  tip: ISIM
+nitelik.toString(): ipuçları
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: ipuç, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_BELIRTME_I kök: ipuç ISIM YUM IS_TAM  tip: ISIM
+kelime:  [ Kok: ipuç, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_SAHIPLIK_O_I kök: ipuç ISIM YUM IS_TAM  tip: ISIM
+kelime:  [ Kok: ipuç, ISIM ]  Ekler: ISIM_SAHIPLIK_ONLAR_LERI kök: ipuç ISIM YUM IS_TAM  tip: ISIM
+nitelik.toString(): veriyor.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: ver, FIIL ]  Ekler: FIIL_SIMDIKIZAMAN_IYOR kök: ver FIIL  tip: FIIL
+nitelik.toString(): kitabı
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_TAMLAMA_I kök: kitap ISIM YUM  tip: ISIM
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_SAHIPLIK_O_I kök: kitap ISIM YUM  tip: ISIM
+kelime:  [ Kok: kitap, ISIM ]  Ekler: ISIM_BELIRTME_I kök: kitap ISIM YUM  tip: ISIM
+nitelik.toString(): okuduktan
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: oku, FIIL ]  Ekler: FIIL_BELIRTME_DIK + ISIM_CIKMA_DEN kök: oku FIIL SDK_ZAMAN  tip: FIIL
+nitelik.toString(): sonra
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: sonra, ZAMAN ]  kök: sonra ZAMAN  tip: ZAMAN
+nitelik.toString(): çocuklara
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: çocuk, ISIM ]  Ekler: ISIM_COGUL_LER + ISIM_YONELME_E kök: çocuk ISIM YUM  tip: ISIM
+nitelik.toString(): yaşama
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: yaşam, ISIM ]  Ekler: ISIM_YONELME_E kök: yaşam ISIM  tip: ISIM
+kelime:  [ Kok: yaşa, FIIL ]  Ekler: FIIL_OLUMSUZLUK_ME kök: yaşa FIIL SDK_ZAMAN  tip: FIIL
+kelime:  [ Kok: yaşa, FIIL ]  Ekler: FIIL_DONUSUM_ME kök: yaşa FIIL SDK_ZAMAN  tip: FIIL
+nitelik.toString(): bakışınız
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: bakış, ISIM ]  Ekler: ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: bakış ISIM  tip: ISIM
+kelime:  [ Kok: bakış, ISIM ]  Ekler: ISIM_SAHIPLIK_SIZ_INIZ kök: bakış ISIM  tip: ISIM
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_EMIR_SIZRESMI_INIZ kök: bak FIIL GEN  tip: FIIL
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_SAHIPLIK_SEN_IN + ISIM_KISI_BIZ_IZ kök: bak FIIL GEN  tip: FIIL
+kelime:  [ Kok: bak, FIIL ]  Ekler: FIIL_DONUSUM_IS + ISIM_SAHIPLIK_SIZ_INIZ kök: bak FIIL GEN  tip: FIIL
+nitelik.toString(): tümüyle
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: tüm, SIFAT ]  Ekler: ISIM_TAMLAMA_I + ISIM_BIRLIKTELIK_LE kök: tüm SIFAT  tip: SIFAT
+kelime:  [ Kok: tüm, SIFAT ]  Ekler: ISIM_SAHIPLIK_O_I + ISIM_BIRLIKTELIK_LE kök: tüm SIFAT  tip: SIFAT
+nitelik.toString(): değişecek.
+SELECTOR-> SELECT id,nitelik from nitelikler;
+db is: idefix_db, tb is: nitelikler
+kelime:  [ Kok: değiş, FIIL ]  Ekler: FIIL_DONUSUM_ECEK kök: değiş FIIL  tip: FIIL
+kelime:  [ Kok: değiş, FIIL ]  Ekler: FIIL_GELECEKZAMAN_ECEK kök: değiş FIIL  tip: FIIL
+kelime:  [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_DONUSUM_ECEK kök: değ FIIL GEN  tip: FIIL
+kelime:  [ Kok: değ, FIIL ]  Ekler: FIIL_BERABERLIK_IS + FIIL_GELECEKZAMAN_ECEK kök: değ FIIL GEN  tip: FIIL
+

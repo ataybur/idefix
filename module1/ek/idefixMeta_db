@@ -1,0 +1,14 @@
+CREATE TABLE alfabe(
+harf varchar(5) NOT NULL,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/'
+);
+
+CREATE TABLE kitap_yay_url(
+yayinevi varchar(80) NOT NULL,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/'
+);
+
+CREATE TABLE kitap_kat_url(
+kategori varchar(80) NOT NULL,
+url varchar(300) DEFAULT 'http://www.idefix.com/kitap/'
+);

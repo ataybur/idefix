@@ -1,0 +1,58 @@
+http://solyaris.wordpress.com/2008/08/09/setup-postgres-in-ubuntu/
+http://www.fankhausers.com/postgresql/jdbc/
+http://www.thegeekstuff.com/2009/05/15-advanced-postgresql-commands-with-examples/
+idefixer:123456
+javascript:elms=document.getElementsByName("checkableitems[]");for (i=0;i<elms.length;i++)
+{if (elms[i].type="checkbox" )elms[i].click()};
+
+/usr/lib/postgresql/9.1/bin/dropdb idefix_db
+/usr/lib/postgresql/9.1/bin/createdb idefix_db
+
+
+/usr/lib/postgresql/9.1/bin/dropdb idefixMeta_db
+/usr/lib/postgresql/9.1/bin/createdb idefixMeta_db
+
+alter table yayin alter column ad type varchar(110);
+alter table nitelikler alter column nitelik type varchar(50);
+alter table diziler add column url varchar(250);
+
+psql idefix_db  -> idefix_db veritabanına girmek için
+
+\q : metin dosyasından, psql'den, veritabanından çıkmak için
+\d : veritabanındaki tabloları, ilişkileri listelemek için
+\i : bir metin dosyasında yazan sql komutlarını yürütmek için
+	Örnek:
+	\i /home/ataybur/workspace/module1/sql
+	\i /home/ataybur/workspace/module1/ek/idefixMeta_db
+	
+row_number'ı alabilmek için:
+select row_number() over (order by kategori) as i,kitap_kat_url.kategori, kitap_kat_url.url from kitap_kat_url;
+
+belli row_numberlı satırı alabilmek için: 
+select * from (select row_number() over (order by kategori) as i,kitap_kat_url.kategori, kitap_kat_url.url from kitap_kat_url) as foo where i=30137; 
+
+
+
+//////////////////////////////////////////////////////////////////////
+Hello,
+
+I got the solution. Here is the method I wrote and I found some inputs from sun forums. Thanks Again!
+
+public boolean executeDBScripts(String aSQLScriptFilePath, Statement stmt) throws IOException,SQLException {
+boolean isScriptExecuted = false;
+try {
+BufferedReader in = new BufferedReader(new FileReader(aSQLScriptFilePath));
+String str;
+StringBuffer sb = new StringBuffer();
+while ((str = in.readLine()) != null) {
+sb.append(str + "\n ");
+}
+in.close();
+stmt.executeUpdate(sb.toString());
+isScriptExecuted = true;
+} catch (Exception e) {
+System.err.println("Failed to Execute" + aSQLScriptFilePath +". The error is"+ e.getMessage());
+} 
+return isScriptExecuted;
+}
+//////////////////////////////////////////////////////////////////////////
