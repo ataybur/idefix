@@ -24,7 +24,7 @@ public class Thread5 {
 		Integer Offset=19;
 		Integer Limit=0;
 		try {
-			Offset=sel.return_count(idefixMeta_db.name(),idefixMeta_db.kitap_yay_url.name(), Conn.user, Conn.pswd)*5/9;
+			Offset=44054;
 			Limit=sel.return_count(idefixMeta_db.name(),idefixMeta_db.kitap_yay_url.name(), Conn.user, Conn.pswd)*6/9;
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -85,7 +85,7 @@ public class Tanitim_Yazi extends Basic_Class {
 		}
 	}
 
-	public void executor_with_limit(int limit_int, int offset_int) {
+	public void executor_with_limit(int limit_int, int offset_int) throws InterruptedException {
 		Integer limit = new Integer(limit_int);
 		Integer offset = new Integer(offset_int);
 		Integer yayin_id = null;
@@ -153,13 +153,9 @@ public class Tanitim_Yazi extends Basic_Class {
 				rows = new Object[DB.idefix_db.nitelikler.sutun_sayisi()];
 				rows = DB.idefix_db.nitelikler.get_rows_with_id();
 				if (count == 0) {
-					try {
-						put.put_in(DB.idefix_db.name(),
-								DB.idefix_db.nitelikler.name(), data);
-						data = new LinkedList<Object[]>();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+					put.put_in(DB.idefix_db.name(),
+							DB.idefix_db.nitelikler.name(), data);
+					data = new LinkedList<Object[]>();
 
 				} else {
 					data = new LinkedList<Object[]>();
@@ -178,14 +174,8 @@ public class Tanitim_Yazi extends Basic_Class {
 							data.add(rows);
 					}
 
-					// gerekliSystem.out.println("deneme");
-					try {
-						put.put_in(DB.idefix_db.name(),
-								DB.idefix_db.nitelikler.name(), data);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-
-					}
+					put.put_in(DB.idefix_db.name(),
+							DB.idefix_db.nitelikler.name(), data);
 
 				}
 				data = new LinkedList<Object[]>();
@@ -197,7 +187,6 @@ public class Tanitim_Yazi extends Basic_Class {
 				rows = DB.idefix_db.yazar_nitelik.get_rows();
 				data_yazar_nitelik.add(rows);
 				for (Object[] obj : object_array) {
-					// gerekliSystem.out.println("obj[0].toString(): "+obj[0].toString());
 					rows = new Object[DB.idefix_db.yayin_nitelik.sutun_sayisi()];
 					nitelik_id = sel.return_selectedId(DB.idefix_db.name(),
 							DB.idefix_db.nitelikler.name(),
@@ -218,13 +207,8 @@ public class Tanitim_Yazi extends Basic_Class {
 //					}
 				}
 
-				try {
-					put.put_in(DB.idefix_db.name(),
-							DB.idefix_db.yayin_nitelik.name(), data);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				// yayin_nitelik için bitir
+				put.put_in(DB.idefix_db.name(),
+						DB.idefix_db.yayin_nitelik.name(), data);
 
 			}
 		} catch (SQLException e) {
@@ -238,22 +222,27 @@ public class Tanitim_Yazi extends Basic_Class {
 		Tanitim_Yazi tanitim_yazi = new Tanitim_Yazi("out2.txt");
 
 		int limit_int = 0;
-		int offset_int = 0;
+		int offset_int = 1;
 		try {
-			//en son burada kaldım
-			offset_int = 1697;
+			//11902: biterse offseti buradan başlat
+			offset_int = 11902;
 			limit_int = sel.return_count(DB.idefix_db.name(),
-					DB.idefix_db.yayinlar.name(), Conn.user, Conn.pswd)
-					- offset_int;
+					DB.idefix_db.yayinlar.name(), Conn.user, Conn.pswd);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
+		
 		for (int i = offset_int; i <= limit_int; i++) {
-			System.out.println("offset:" + i);
-			tanitim_yazi.executor_with_limit(1, i);
+			try {
+				System.out.println(i);
+				tanitim_yazi.executor_with_limit(1, i);
+			} catch (InterruptedException e) {
+				System.out.println("offset:" + i);
+				offset_int=i;
+				e.printStackTrace();
+			}
 		}
 
 	}

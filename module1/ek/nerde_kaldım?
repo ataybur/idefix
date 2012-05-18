@@ -110,8 +110,22 @@ ERROR: duplicate key value violates unique constraint "yayin_nitelik_pkey"
   yayin_kategori,yazar_yayinevi gibi tabloların doldurulmasını sağlayacağım. //sağladım inşallah
   
   31.04.2012 saat 00:45-01.00 arası
-  diziler,//oldu 
-  dizi_yayin,//oldu (test etmedim)
+  diziler,//oldu
+  dizi_yayin,//oldu
   yeniler, cok_satanlar, 
   kategori_nitelik,yayinevi_nitelik,yazar_kategori, 
   yayinevi_kategori tablolarının oluşturulması lazım
+  
+  04.05.2012 Cuma sabahı
+  default id'leri belirleyeceğim. Bunun için önceki verileri gene sileceğim.//yaptım
+  Fekat mümkünse niteliklerini saklayıp onlar üzerinde araştırma yapacağım.//yaptım
+  
+  04.05.2012 Cuma akşamı
+  niteliklerin sayılarını bulmak için veritabanını kullan. Daha hızlı olacağını umuyorum. 
+  
+  13.05.2012 Cumartesi Gecesi - Pazarın ilk saatleri
+  kategori_nitelik, yazar_nitelik, yayinevi_nitelik executorlarını yaz. //yazdım
+  
+  14.05.2012 Pazartesi akşamı
+  cok_satanlar, yeniler tablolarını dolduracak methodları yazmaya başladım.
+  get_Map fonksiyonunu anlamadım tam olarak. Onu düzenle ve amaç için uygun hale getir. 

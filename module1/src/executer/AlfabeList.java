@@ -16,13 +16,8 @@ public class AlfabeList extends Basic_Class {
 		this.Set_Url(url_yayinevi);
 	}
 
-	public void executor(Integer Limit, Integer Offset) {
-		try {
-			par.get_alphabetList(url);
-		} catch (IOException e) {
-
-			e.printStackTrace();
-		}
+	public void executor() {
+		par.get_alphabetList(url);
 
 		try {
 			rs = sel.return_alfabe();
@@ -43,41 +38,12 @@ public class AlfabeList extends Basic_Class {
 			e.printStackTrace();
 		}
 
-		rows = new String[1];
-		rows[0] = DB.idefix_db.yayinevleri.url();
-		try {
-			rs = sel.return_select_with_limit(rows, Conn.idefix_db,
-					Conn.tb_yayinevleri, Limit, Offset, Conn.user, Conn.pswd);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		try {
-			while (rs.next()) {
-				System.out.println("rs.getString(1): " + rs.getString(1));
-				par.get_kitap_url(rs.getString(1), Turler.yayinevi);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
 	}
 
 	public static void main(String[] args) {
 		AlfabeList alfabe = new AlfabeList("Executer.txt");
-		Integer limit = 1000;
-		for (int i = 1; i <= limit; i++) {
-			System.out.println("limit: " + limit);
-			alfabe.executor(1, i);
-		}
+
+		alfabe.executor();
 	}
 
 }

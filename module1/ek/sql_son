@@ -6,15 +6,21 @@ url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
 PRIMARY KEY(id)
 );
 
+INSERT INTO kategoriler (kategori_ust,kategori_alt,url)
+VALUES ('yok','yok','http://www.idefix.com/kitap/');
+
 CREATE TABLE nitelikler(
 id bigserial,
-nitelik tsquery,
+nitelik varchar(80),
 PRIMARY KEY(id)
 );
 
 CREATE TABLE kategori_nitelik(
 id_kategori bigint NOT NULL REFERENCES kategoriler ON DELETE RESTRICT,
-id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT
+id_nitelik bigint NOT NULL REFERENCES nitelikler ON DELETE RESTRICT,
+sayi int DEFAULT -1,
+agirlik int DEFAULT -1,
+PRIMARY KEY(id_kategori,id_nitelik)
 );
 
 CREATE TABLE yayinevleri(
@@ -25,12 +31,18 @@ url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
 PRIMARY KEY(id)
 );
 
+INSERT INTO yayinevleri (ad,urun_sayisi,url)
+VALUES ('yok',0,'http://www.idefix.com/kitap/');
+
 CREATE TABLE yazarlar(
 id bigserial,
 ad varchar(300) NOT NULL,
 url varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
 PRIMARY KEY(id)
 );
+
+INSERT INTO yazarlar (ad,url)
+VALUES ('yok','http://www.idefix.com/kitap/');
 
 CREATE TABLE yayinlar(
 id bigserial,
@@ -41,6 +53,11 @@ tanitim_yazi varchar(20000),
 url  varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
 PRIMARY KEY(id)
 );
+
+INSERT INTO yayinlar (ad, ad_ikinci, id_yayinevi, tanitim_yazi,url)
+VALUES ('yok', 'yok',(
+SELECT min(id) FROM yayinevleri
+),'yok','http://www.idefix.com/kitap/');
 
 CREATE TABLE yayin_kategori(
 id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
@@ -63,6 +80,11 @@ id_yayinevi bigint NOT NULL REFERENCES yayinevleri ON DELETE RESTRICT,
 url  varchar(300) DEFAULT 'http://www.idefix.com/kitap/',
 PRIMARY KEY(id)
 );
+
+INSERT INTO diziler (ad_dizi,id_yayinevi,url)
+VALUES ('dizi yok',(
+SELECT min(id) FROM yayinevleri
+),'http://www.idefix.com/kitap/'); 
 
 	CREATE TABLE dizi_yayin(
 	id_dizi bigint NOT NULL REFERENCES diziler ON DELETE RESTRICT,
@@ -114,9 +136,17 @@ id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
 tarih date DEFAULT CURRENT_DATE
 );
 
+INSERT INTO yeniler (id_yayin)
+VALUES ((
+SELECT min(id) from yayinlar
+));
+
 CREATE TABLE cok_satanlar(
 id_yayin bigint NOT NULL REFERENCES yayinlar ON DELETE RESTRICT,
-sira int DEFAULT -1,
 tarih date DEFAULT CURRENT_DATE
 );
 
+INSERT INTO cok_satanlar (id_yayin)
+VALUES ((
+SELECT min(id) from yayinlar
+));

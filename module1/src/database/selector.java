@@ -44,24 +44,17 @@ public class selector {
 		String sql = "SELECT ";
 
 		for (Object row : rows) {
-			// //gerelki//gerekli//////System.out.println("rows length: "+rows.length+"row[length-1]: "+rows[rows.length-1]);
 			if (row.toString().compareTo(rows[rows.length - 1].toString()) == 0)
 				sql = sql + row;
 			else
 				sql = sql + row + ",";
 		}
 		sql = sql + " from " + tb + ";";
-		// out.newLine();
-		// out.write("SELECTOR-> " +sql);
-		//gerekli//////System.out.println("SELECTOR-> " + sql);
+
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
-		// gerelki//gerekli//////System.out.println("db is: "+db+", tb is: "+tb);
-		//////System.out.println("sql: "+sql);
 		ResultSet rs = s.executeQuery(sql);
 		c.close();
-		// out.flush();
-		// out.close();
 		return rs;
 
 	}
@@ -79,24 +72,49 @@ public class selector {
 		String sql = "SELECT ";
 
 		for (Object row : rows) {
-			// //gerelki//gerekli//////System.out.println("rows length: "+rows.length+"row[length-1]: "+rows[rows.length-1]);
-			if (row.toString().compareTo(rows[rows.length - 1].toString()) == 0)
-				sql = sql + row;
-			else
-				sql = sql + row + ",";
+			try {
+				if (row.toString().compareTo(rows[rows.length - 1].toString()) == 0)
+					sql = sql + row;
+				else
+					sql = sql + row + ",";
+			} catch (Exception e) {				
+				System.out.println("rows.length: "+rows.length);
+				System.out.println("row[0]: "+rows[0]);
+			}
 		}
 		sql = sql + " from " + tb + " limit " + Limit.toString() + " offset "
 				+ Offset + ";";
-		// out.newLine();
-		// out.write("SELECTOR-> " +sql);
-		// gerelki//gerekli//////System.out.println("SELECTOR-> " +sql);
+
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
-		// gerelki//gerekli//////System.out.println("db is: "+db+", tb is: "+tb);
 		ResultSet rs = s.executeQuery(sql);
 		c.close();
-		// out.flush();
-		// out.close();
+
+		return rs;
+
+	}
+
+	public ResultSet select_nitelik(String db, String tb, String id_name,
+			Integer id, String user, String pswd) throws SQLException,
+			IOException {
+		Connection c = null;
+		Statement s = null;
+
+		String connString = "jdbc:postgresql://localhost/" + db;
+		String sql = "select id_nitelik, sum(sayi) from yayin_nitelik "
+				+ "where id_yayin in (" + "select id_yayin from " + tb
+				+ " where " + id_name + "=" + id + ") "
+				+ "and id_nitelik in ( "
+				+ "select id_nitelik from yayin_nitelik "
+				+ "where id_yayin in ( " + "select id_yayin from " + tb
+				+ " where " + id_name + "=" + id + ")) "
+				+ "group by id_nitelik; ";
+		System.out.println("select_nitelik: sql:" + sql);
+		c = DriverManager.getConnection(connString, user, pswd);
+		s = c.createStatement();
+		ResultSet rs = s.executeQuery(sql);
+		c.close();
+
 		return rs;
 
 	}
@@ -116,9 +134,6 @@ public class selector {
 		String sql = "SELECT id FROM " + tb + " where " + row_name + "='"
 				+ row_value.replace("'", " ") + "';";
 
-		// out.newLine();
-		// out.write("SELECTOR-> " +sql);
-		////System.out.println("sql: " + sql);
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
 		ResultSet rs = s.executeQuery(sql);
@@ -126,23 +141,21 @@ public class selector {
 			id = rs.getInt(1);
 
 		c.close();
-		// out.flush();
-		// out.close();
+
 		return id;
 	}
-	
-	public LinkedList<Integer> return_selectedColumnDiscinct(String db, String tb, String column_name,Integer Limit,Integer Offset,
-			 String user, String pswd) throws SQLException,
-			IOException {
+
+	public LinkedList<Integer> return_selectedColumnDiscinct(String db,
+			String tb, String column_name, Integer Limit, Integer Offset,
+			String user, String pswd) throws SQLException, IOException {
 		Connection c = null;
 		Statement s = null;
 		LinkedList<Integer> id = new LinkedList<Integer>();
-	
 
 		String connString = "jdbc:postgresql://localhost/" + db;
-		String sql = "SELECT distinct "+column_name+" FROM " + tb  + " limit " + Limit.toString() + " offset "
-				+ Offset + ";";
-//////System.out.println("sql: "+sql);
+		String sql = "SELECT distinct " + column_name + " FROM " + tb
+				+ " limit " + Limit.toString() + " offset " + Offset + ";";
+
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
 		ResultSet rs = s.executeQuery(sql);
@@ -153,35 +166,31 @@ public class selector {
 
 		return id;
 	}
-	
-	public LinkedList<Integer> return_selectedIdArray(String db, String tb, String out_row_name,String row_name,
-			String row_value, String user, String pswd) throws SQLException,
-			IOException {
+
+	public LinkedList<Integer> return_selectedIdArray(String db, String tb,
+			String out_row_name, String row_name, String row_value,
+			String user, String pswd) throws SQLException, IOException {
 		Connection c = null;
 		Statement s = null;
 		LinkedList<Integer> id = new LinkedList<Integer>();
-		int counter=0;
+		int counter = 0;
 		FileWriter fstream = new FileWriter(
 				"/home/ataybur/workspace/module1/ek/Executer.txt", true);
 		BufferedWriter out = new BufferedWriter(fstream);
 
 		String connString = "jdbc:postgresql://localhost/" + db;
-		String sql = "SELECT "+out_row_name+" FROM " + tb + " where " + row_name + "='"
-				+ row_value.replace("'", " ") + "';";
-		////////System.out.println("sql: "+sql);
-		// out.newLine();
-		// out.write("SELECTOR-> " +sql);
-		//gerekli//////System.out.println("sql: " + sql);
+		String sql = "SELECT " + out_row_name + " FROM " + tb + " where "
+				+ row_name + "='" + row_value.replace("'", " ") + "';";
+
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
 		ResultSet rs = s.executeQuery(sql);
-		
-		while(rs.next())
+
+		while (rs.next())
 			id.add(rs.getInt(1));
 
 		c.close();
-		// out.flush();
-		// out.close();
+
 		return id;
 	}
 
@@ -198,9 +207,6 @@ public class selector {
 		String connString = "jdbc:postgresql://localhost/" + db;
 		String sql = "SELECT count(*) FROM " + tb + ";";
 
-		// out.newLine();
-		// out.write("SELECTOR-> " +sql);
-		//gerekli//////System.out.println("sql: " + sql);
 		c = DriverManager.getConnection(connString, user, pswd);
 		s = c.createStatement();
 		ResultSet rs = s.executeQuery(sql);
@@ -208,54 +214,52 @@ public class selector {
 			id = rs.getInt(1);
 
 		c.close();
-		// out.flush();
-		// out.close();
+
 		return id;
 	}
 
 	public Integer return_select_count_with_where(Object[] rows, String db,
-			String tb, Object[] data_contents, String user, String pswd)
-			{
-		
+			String tb, Object[] data_contents, String user, String pswd) {
+
 		Connection c = null;
-		Integer count=0;
+		Integer count = 0;
 		Statement s = null;
 
 		String connString = "jdbc:postgresql://localhost/" + db;
 		String sql = "SELECT count(*) from " + tb + " where ";
-		
+
 		for (int i = 0; i < rows.length; i++) {
 			if (rows[i].toString().compareTo(rows[rows.length - 1].toString()) == 0) {
 				if (data_contents[i].getClass().getName()
 						.compareTo("java.lang.String") == 0)
-					sql = sql + rows[i] + " like \'" + data_contents[i]+"\';";
+					sql = sql + rows[i] + " like \'" + data_contents[i] + "\';";
 				else
 					sql = sql + rows[i] + " = " + data_contents[i];
 			} else if (data_contents[i].getClass().getName()
 					.compareTo("java.lang.String") == 0)
-				sql = sql + rows[i]  + " like \'" + data_contents[i]+"\'" + " and ";
-			else sql = sql + rows[i]  + " = " + data_contents[i]+ " and ";
+				sql = sql + rows[i] + " like \'" + data_contents[i] + "\'"
+						+ " and ";
+			else
+				sql = sql + rows[i] + " = " + data_contents[i] + " and ";
 		}
-		////System.out.println("return_select_count_with_where:sql " + sql);
 		try {
 			c = DriverManager.getConnection(connString, user, pswd);
 			s = c.createStatement();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-				
-		ResultSet rs=null;
+
+		ResultSet rs = null;
 		try {
 			rs = s.executeQuery(sql);
 			c.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 
 		try {
-			if(rs.next())
-				count=rs.getInt(1);
+			if (rs.next())
+				count = rs.getInt(1);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -263,108 +267,106 @@ public class selector {
 		return count;
 
 	}
-	
+
 	public Integer return_select_id_with_where(Object[] rows, String db,
-			String tb, Object[] data_contents, String user, String pswd)
-			{
-		
+			String tb, Object[] data_contents, String user, String pswd) {
+
 		Connection c = null;
-		Integer id=0;
+		Integer id = 0;
 		Statement s = null;
 
 		String connString = "jdbc:postgresql://localhost/" + db;
 		String sql = "SELECT id from " + tb + " where ";
-		
+
 		for (int i = 0; i < rows.length; i++) {
-			// //gerelki//gerekli//////System.out.println("rows length: "+rows.length+"row[length-1]: "+rows[rows.length-1]);
 			if (rows[i].toString().compareTo(rows[rows.length - 1].toString()) == 0) {
 				if (data_contents[i].getClass().getName()
 						.compareTo("java.lang.String") == 0)
-					sql = sql + rows[i] + " like \'" + data_contents[i]+"\';";
+
+					sql = sql + rows[i] + " like \'"
+							+ data_contents[i].toString().replace("\'", "")
+							+ "\';";
+
 				else
 					sql = sql + rows[i] + " = " + data_contents[i];
 			} else if (data_contents[i].getClass().getName()
 					.compareTo("java.lang.String") == 0)
-				sql = sql + rows[i]  + " like \'" + data_contents[i]+"\'" + " and ";
-			else sql = sql + rows[i]  + " = " + data_contents[i]+ " and ";
+				sql = sql + rows[i] + " like \'"
+						+ data_contents[i].toString().replace("\'", "") + "\'"
+						+ " and ";
+			else
+				sql = sql + rows[i] + " = " + data_contents[i] + " and ";
 		}
-		//////System.out.println("return_select_count_with_where:sql " + sql);
 		try {
 			c = DriverManager.getConnection(connString, user, pswd);
 			s = c.createStatement();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-				
-		// gerelki//gerekli//////System.out.println("db is: "+db+", tb is: "+tb);		
-		ResultSet rs=null;
+
+		ResultSet rs = null;
+
 		try {
 			rs = s.executeQuery(sql);
 			c.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("sql: " + sql);
 			e.printStackTrace();
 		}
-		
 
 		try {
-			if(rs.next())
-				id=rs.getInt(1);
+			if (rs.next())
+				id = rs.getInt(1);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
+if(id==0)
+	System.out.println("sql: " + sql);
 		return id;
 
 	}
-	
+
 	public ResultSet return_select_with_where(Object[] rows, String db,
-			String tb, Object[] data_contents, String user, String pswd)
-			{
-		
+			String tb, Object[] data_contents, String user, String pswd) {
+
 		Connection c = null;
-		Integer count=0;
+		Integer count = 0;
 		Statement s = null;
 
 		String connString = "jdbc:postgresql://localhost/" + db;
 		String sql = "SELECT * from " + tb + " where ";
-		
+
 		for (int i = 0; i < rows.length; i++) {
-			// //gerelki//gerekli//////System.out.println("rows length: "+rows.length+"row[length-1]: "+rows[rows.length-1]);
 			if (rows[i].toString().compareTo(rows[rows.length - 1].toString()) == 0) {
 				if (data_contents[i].getClass().getName()
 						.compareTo("java.lang.String") == 0)
-					sql = sql + rows[i] + " like \'" + data_contents[i]+"\';";
+					sql = sql + rows[i] + " like \'" + data_contents[i] + "\';";
 				else
 					sql = sql + rows[i] + " = " + data_contents[i];
 			} else if (data_contents[i].getClass().getName()
 					.compareTo("java.lang.String") == 0)
-				sql = sql + rows[i]  + " like \'" + data_contents[i]+"\'" + " and ";
-			else sql = sql + rows[i]  + " = " + data_contents[i]+ " and ";
+				sql = sql + rows[i] + " like \'" + data_contents[i] + "\'"
+						+ " and ";
+			else
+				sql = sql + rows[i] + " = " + data_contents[i] + " and ";
 		}
-		//////System.out.println("return_select_with_where:sql: " + sql);
 		try {
 			c = DriverManager.getConnection(connString, user, pswd);
 			s = c.createStatement();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-				
-		// gerelki//gerekli//////System.out.println("db is: "+db+", tb is: "+tb);		
-		ResultSet rs=null;
+
+		ResultSet rs = null;
 		try {
 			rs = s.executeQuery(sql);
 			c.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 
-	
 		return rs;
 
 	}
-	
 
 }

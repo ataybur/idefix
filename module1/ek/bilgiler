@@ -5,24 +5,34 @@ idefixer:123456
 javascript:elms=document.getElementsByName("checkableitems[]");for (i=0;i<elms.length;i++)
 {if (elms[i].type="checkbox" )elms[i].click()};
 
+
+/usr/lib/postgresql/9.1/bin/dropdb idefixMeta_db
+/usr/lib/postgresql/9.1/bin/createdb idefixMeta_db
 /usr/lib/postgresql/9.1/bin/dropdb idefix_db
 /usr/lib/postgresql/9.1/bin/createdb idefix_db
 
 
-/usr/lib/postgresql/9.1/bin/dropdb idefixMeta_db
-/usr/lib/postgresql/9.1/bin/createdb idefixMeta_db
 
 alter table yayin alter column ad type varchar(110);
-alter table nitelikler alter column nitelik type varchar(50);
+alter table nitelikler alter column nitelik type varchar(80);
 alter table diziler add column url varchar(250);
 
+alter table kategori_nitelik add column sayi int DEFAULT -1;
+alter table kategori_nitelik add column agirlik int DEFAULT -1;
+
+ALTER SEQUENCE nitelikler_id_seq RESTART WITH 1;
+
+SELECT c.relname FROM pg_class c WHERE c.relkind = 'S';
+
 psql idefix_db  -> idefix_db veritabanına girmek için
+
+
 
 \q : metin dosyasından, psql'den, veritabanından çıkmak için
 \d : veritabanındaki tabloları, ilişkileri listelemek için
 \i : bir metin dosyasında yazan sql komutlarını yürütmek için
 	Örnek:
-	\i /home/ataybur/workspace/module1/sql
+	\i /home/ataybur/workspace/module1/ek/sql_son
 	\i /home/ataybur/workspace/module1/ek/idefixMeta_db
 	
 row_number'ı alabilmek için:
@@ -56,3 +66,54 @@ System.err.println("Failed to Execute" + aSQLScriptFilePath +". The error is"+ e
 return isScriptExecuted;
 }
 //////////////////////////////////////////////////////////////////////////
+
+
+//yayinevi içindeki niteliklerin sayısını bulmak için
+select sum(sayi) from yayin_nitelik 
+where id_yayin in 
+(select id_yayin from yazar_yayin 
+where id_yazar=7) 
+and id_nitelik=1;
+
+select id_nitelik, sum(sayi) from yayin_nitelik 
+where id_yayin in 
+(select id_yazar from yazar_yayin 
+where id_yayin=7)
+and id_nitelik=1
+group by id_nitelik;
+
+
+select id_nitelik, sum(sayi) from yayin_nitelik 
+where id_yayin in 
+( 
+select id_yayin from yazar_yayin 
+where id_yazar=7
+)
+and id_nitelik in 
+   (
+    select id_nitelik from yayin_nitelik 
+    where id_yayin in 
+     (
+     select id_yayin from yazar_yayin 
+     where id_yazar=7
+     )
+   )
+group by id_nitelik;
+
+
+select id_yazar, id_nitelik, sum(sayi) from yayin_nitelik, yazar_yayin 
+where yayin_nitelik.id_yayin in 
+( 
+select id_yayin from yazar_yayin 
+where id_yazar=7
+)
+and id_nitelik in 
+   (
+    select id_nitelik from yayin_nitelik 
+    where id_yayin in 
+     (
+     select id_yayin from yazar_yayin 
+     where id_yazar=7
+     )
+   )
+group by id_nitelik, id_yazar;

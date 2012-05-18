@@ -28,31 +28,41 @@ public class putter {
 	 * @throws IOException
 	 * @throws InterruptedException
 	 */
-	public void put_in(String db_name, String table_name, List<Object[]> data)
-			throws SQLException, IOException, InterruptedException {
+	public void put_in(String db_name, String table_name, List<Object[]> data) throws PSQLException
+			{
 		String connString = "jdbc:postgresql://localhost/" + db_name;
 		String userName = "idefixer";
 		String psword = "123456";
-		Connection c = DriverManager
-				.getConnection(connString, userName, psword);
+		Connection c=null;
+		try {
+			c = DriverManager
+					.getConnection(connString, userName, psword);
+		} catch (SQLException e2) {
+			e2.printStackTrace();
+		}
 		String query = "INSERT INTO " + table_name + " (";
 
 		selector sel = new selector();
-		parser par = new parser();
 		putter put = new putter();
-		FileWriter fstream = new FileWriter(
-				"/home/ataybur/workspace/module1/ek/Executer.txt", true);
-		BufferedWriter out = new BufferedWriter(fstream);
-		//out.flush();
-		String ad_kitap = null;
-		String ad_yazar = null;
-		Integer id_kitap = null;
-		Integer id_yazar = null;
+
 
 		// data.get(0) bir String dizisidir.
 		// Hangi tablo çekilecekse sütun adlarını barındırır.
-		ResultSet rs = sel.return_select(data.get(0), db_name, table_name,
-				Conn.user, Conn.pswd);
+		try {
+			ResultSet rs = sel.return_select(data.get(0), db_name, table_name,
+					Conn.user, Conn.pswd);
+		} catch (SQLException e1) {
+			System.out.println("db_name: "+db_name+", table_name: "+table_name);
+			for(Object obj:data.get(0))
+				System.out.println("data[]: "+obj.toString());
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			System.out.println("db_name: "+db_name+", table_name: "+table_name);
+			for(Object obj:data.get(0))
+				System.out.println("data[]: "+obj.toString());
+			e1.printStackTrace();
+		}
+		
 
 		// data.get(0) sütun adlarını içerdiğinden dolayı
 		// sayaç j=1'den başlıyor.
@@ -82,21 +92,33 @@ public class putter {
 				//sql insert into cümleciği hazırlandı.
 				
 				PreparedStatement ps = null;
-				ps = c.prepareStatement(query);
+				try {
+					ps = c.prepareStatement(query);
+				} catch (SQLException e1) {
+					System.out.println("quey: "+query);
+					e1.printStackTrace();
+				}
 				
 				//sql cümleciğine parametreler ekleniyor.
 				//j1 indisli her bir for döngüsünde bir satır ekleniyor.
 				for (int j1 = 1; j1 < data.size(); j1++) {
 					for (int i = 1; i <= data.get(j1).length; i++) {
-						//gerekli////System.out.println("length "+data.get(j1).length+", PUTTER->data.get(j1)[i-1] :"+data.get(j1)[i-1]);						
 						if (data.get(j1)[i - 1].getClass().getName() == "java.lang.String")
-							// TODO Burada String halinde tutulan
-							// TODO çoklu yazarlar birbirinden ayrılacak.
-							// TODO Geçici bi String[]'e atılacaklar.
-							ps.setString(i, data.get(j1)[i - 1].toString()
-									.trim().replace('\'', ' '));													
+							try {
+								ps.setString(i, data.get(j1)[i - 1].toString()
+										.trim().replace('\'', ' '));
+							} catch (SQLException e) {
+								System.out.println("1: "+data.get(j1)[i - 1].toString()
+										.trim().replace('\'', ' '));
+								System.out.println("2: "+data.get(j1)[i - 1]);
+								e.printStackTrace();
+							}
 						else if (data.get(j1)[i - 1].getClass().getName() == "java.lang.Integer")
-							ps.setInt(i, (Integer) data.get(j1)[i - 1]);
+							try {
+								ps.setInt(i, (Integer) data.get(j1)[i - 1]);
+							} catch (SQLException e) {
+								e.printStackTrace();
+							}
 
 					}
 					//sql cümleciğine parametreler eklendi.
@@ -104,42 +126,24 @@ public class putter {
 					//sql cümleciği execute ediliyor.
 					will_duplicate=put.willDuplicate(db_name, table_name, data.get(0), data.get(j1), Conn.user, Conn.pswd);
 					if (!will_duplicate)
-					try {			
-						ps.executeUpdate();
-					} catch (PSQLException e) {
-						e.printStackTrace();
-						e.getSQLState();
-					}
-					//sql cümleciği execute edildi.
-					
-					
-					// Bu noktadan sonra geçici String[] içinde tutulan
-					// yazarlar
-					// tabloya eklenmiş yazarın id'si ile birlikte
-					// yazar_yayin tablosuna yerleştirilecekler.
-//					if (table_name == DB.idefix_db.yayinlar.name()) {
-//						//gerelki//gerekli////System.out.println("par.kitap_yazarList.toString(): "+par.kitap_yazarList.toString());						
-//						//System.out.println("par.kitap_yazarList.size(): "+par.kitap_yazarList.size());
-//			
-//						for (int i = 1; i < par.kitap_yazarList.size(); i++) {
-//							ad_yazar = par.kitap_yazarList.get(i)[0].toString();
-//							ad_kitap = par.kitap_yazarList.get(i)[1].toString();
-//							id_yazar = sel.return_selectedId(Conn.idefix_db,
-//									Conn.tb_yazarlar, "ad", ad_yazar,
-//									Conn.user, Conn.pswd);
-//							id_kitap = sel.return_selectedId(Conn.idefix_db,
-//									Conn.tb_yayinlar, "ad", ad_kitap, Conn.user,
-//									Conn.pswd);
-//							par.kitap_yazarList.get(i)[0] = id_yazar;
-//							par.kitap_yazarList.get(i)[1] = id_kitap;
-//						}
-//						put.put_in(Conn.idefix_db, Conn.tb_yazar_yayin,
-//								par.kitap_yazarList);
-//					}
+					 try {
+							ps.executeUpdate();
+						} catch (SQLException e) {							
+							e.printStackTrace();
+						}
+								
 				}
-				c.close();
+				try {
+					c.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 				data.clear();
-				Thread.sleep(100);
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 
 			}
 		}
@@ -159,6 +163,57 @@ public class putter {
 		ps.executeUpdate();
 
 		c.close();
+
+	}
+	
+	public void put_in_nitelikler(String tb,String column,Integer id_temp,Integer id_nitelik,Integer sayi){
+		Connection c=null;	
+		
+		String query = "INSERT INTO "+tb+" ("+column+", id_nitelik, sayi ) VALUES (?,?,?);";
+		
+		PreparedStatement ps=null;
+		
+		try {
+			c = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/idefix_db", "idefixer", "123456");			
+			ps = c.prepareStatement(query);
+			ps.setInt(1, id_temp);
+			ps.setInt(2, id_nitelik);
+			ps.setInt(3, sayi);
+			ps.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("query?: "+ps.toString());
+		try {
+			c.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void restart_id(String tb_name){
+		Connection c=null;
+		PreparedStatement ps;
+		String query = "ALTER SEQUENCE "+tb_name+"_id_seq RESTART WITH 1;";
+
+		try {
+			c = DriverManager.getConnection(
+					"jdbc:postgresql://localhost/idefix_db", "idefixer", "123456");
+			ps = c.prepareStatement(query);
+			ps.executeUpdate();
+			c.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+
+
+		
+
+		
 
 	}
 	public boolean willDuplicate(String db,String tb,Object[] data_columns,Object[] data_contents,String user,String pswd) {

@@ -92,16 +92,22 @@ public class Trim {
 		Integer flag = new Integer(0);
 		LinkedList<String> nitelikler = new LinkedList<String>();
 		String son_sozcuk = ".";
-		if (cumle.length() > 3&&cumle.contains(" "))
+		if (cumle.length() > 3 && cumle.contains(" "))
 			son_sozcuk = cumle.substring(cumle.trim().lastIndexOf(" "));
 
-		// gerelki//gerekliSystem.out.println("son_sozcuk: " + son_sozcuk);
 		son_sozcuk = son_sozcuk.trim();
 		Locale trLoc = new Locale("tr", "TR");
 		String[] kelimeler = null;
-		kelimeler = cumle.split(" ");
+		
+		//arasında birden fazla boşluk olan kelimeleri de doğru ayırmak için
+		//arasında -(tire) olan kelime gruplarını ayırmak için 
+		//başında sonunda ,(virgül) olan ifadeleri ayırmak için 
+		//[ -,]+ kullandım.
+		kelimeler = cumle.split("[ -,():/';!?]+");
 		KelimeTipi tip = null;
 		for (String sozcuk : kelimeler) {
+			sozcuk=sozcuk.replace("\"", "");
+			sozcuk=sozcuk.replace("-", "");
 			if (!(sozcuk.length() <= 2) && !is_integer(sozcuk))
 
 				if (sozcuk.compareTo(son_sozcuk) == 0) {
@@ -142,57 +148,74 @@ public class Trim {
 		Trim tr = new Trim();
 		cumleler = tr.tanitim_yazi_dan_cumle(tanitim_yazi);
 		for (String cumle : cumleler) {
-			//gerekliSystem.out.println("Cumle: " + cumle);
 			nitelikler_temp = tr.cumle_den_kelime(cumle);
 			for (String nitelik : nitelikler_temp)
 				nitelikler.add(nitelik);
 		}
 		return nitelikler;
 	}
-public HashMap<Object,Integer> returnHashMap(String tanitim_yazi){
-	//gerekliSystem.out.println("in returnHashMap");
-	
-	HashMap<Object,Integer> hm=new HashMap<Object,Integer>();
-	LinkedList<String> nitelikler=new LinkedList<String>();
-	nitelikler=Trim.return_nitelik(tanitim_yazi);
-	Integer nof=new Integer(1);
-	//gerekliSystem.out.println("nitelikler.toString(): "+nitelikler.toString());
-	for(String nitelik:nitelikler)
-	{
-		//gerekliSystem.out.println(nitelik);
-		
-		if(hm.containsKey(nitelik))
-		{
-			nof=hm.get(nitelik);
-			hm.put(nitelik, nof+1);
+
+	public HashMap<Object, Integer> returnHashMap(String tanitim_yazi) {
+		HashMap<Object, Integer> hm = new HashMap<Object, Integer>();
+		LinkedList<String> nitelikler = new LinkedList<String>();
+		nitelikler = Trim.return_nitelik(tanitim_yazi);
+		Integer nof = new Integer(1);
+		// gerekliSystem.out.println("nitelikler.toString(): "+nitelikler.toString());
+		for (String nitelik : nitelikler) {
+			// gerekliSystem.out.println(nitelik);
+
+			if (hm.containsKey(nitelik)) {
+				nof = hm.get(nitelik);
+				hm.put(nitelik, nof + 1);
+			} else
+				hm.put(nitelik, 1);
 		}
-		else hm.put(nitelik, 1);
+		return hm;
 	}
-	return hm;
-}
-public List<Object[]> returnArray(HashMap<Object,Integer> hm){
-	
-	Object[] arrayMap=hm.entrySet().toArray();
-	Object[] arrayEntry=new Object[2];
-	LinkedList<Object[]> arrayList=new LinkedList<Object[]>();
-	Trim tr=new Trim(); 
-	Integer length=0; 
-	for(Object entry:arrayMap)
-	{			//System.out.println(entry.toString());
-		if(hm.keySet().getClass().getName().contains("String"))
-		arrayEntry[0]=entry.toString().split("=")[0].toString();
-		//else if(hm.keySet().getClass().getName().contains("Integer"))
-			arrayEntry[0]=Integer.parseInt(entry.toString().split("=")[0].toString());
-		length=entry.toString().split("=").length;
-		if(tr.is_integer( entry.toString().split("=")[1]))		
-			arrayEntry[1]=Integer.parseInt(entry.toString().split("=")[1]);
-		else
-		arrayEntry[1]=Integer.parseInt(entry.toString().split("=")[2]);
-		arrayList.add(arrayEntry);
-		arrayEntry=new Object[2];
+
+	public List<Object[]> returnArray(HashMap<Object, Integer> hm) {
+
+		Object[] arrayMap = hm.entrySet().toArray();
+		Object[] arrayEntry = new Object[2];
+		LinkedList<Object[]> arrayList = new LinkedList<Object[]>();
+		Trim tr = new Trim();
+		Integer length = 0;
+		for (Object entry : arrayMap) {
+			try {
+					arrayEntry[0] = entry.toString().split("=")[0].toString();
+//					else if (hm.keySet().getClass().getName().contains("Integer"))
+//					arrayEntry[0] = Integer.parseInt(entry.toString()
+//							.split("=")[0].toString());
+
+				length = entry.toString().split("=").length;
+
+				if (tr.is_integer(entry.toString().split("=")[1]))
+					arrayEntry[1] = Integer.parseInt(entry.toString()
+							.split("=")[1]);
+				else
+					arrayEntry[1] = Integer.parseInt(entry.toString()
+							.split("=")[2]);
+			} catch (Exception e) {
+				System.out.println("entry.toString: " + entry.toString());
+			}
+			arrayList.add(arrayEntry);
+			arrayEntry = new Object[2];
+		}
+		return arrayList;
 	}
-	return arrayList;
-}
+	public String trim_nitelik(String nitelik){
+		
+		// arasında -(tire) olan grupları ayır.
+		nitelik=nitelik.replace(".", "");
+		nitelik=nitelik.replace("(", "");
+		nitelik=nitelik.replace(")", "");
+		nitelik=nitelik.replace(",", "");
+				
+		
+		
+		
+		return nitelik;
+	}
 	public List<Object> trim_tanitim_yazi(String tanitim_yazi) {
 		List<Object> nitelikList = new LinkedList<Object>();
 		String[] nitelikler = null;

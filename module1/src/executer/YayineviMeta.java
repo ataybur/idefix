@@ -37,14 +37,7 @@ public class YayineviMeta extends Basic_Class{
 				for(Object[] kitap : par.kitap_url_list)
 				put.put_in(Conn.idefixMeta_db, Conn.tb_kitap_yay_url, par.kitap_url_list);
 			}
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			
+		} catch (SQLException e) {			
 			e.printStackTrace();
 		} catch (Exception e) {
 			

@@ -23,19 +23,23 @@ import org.jsoup.helper.Validate;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.postgresql.util.PSQLException;
 
 import util.Trim;
 
 import database.DB;
 import database.DB.idefixMeta_db;
 import database.DB.idefix_db;
+import database.DB.idefix_db.cok_satanlar;
 import database.DB.idefix_db.dizi_yayin;
 import database.DB.idefix_db.kategoriler;
 import database.DB.idefix_db.yayin_kategori;
+import database.DB.idefix_db.yayin_yayinevi;
 import database.DB.idefix_db.yayinevleri;
 import database.DB.idefix_db.yayinlar;
 import database.DB.idefix_db.yazar_yayin;
 import database.DB.idefix_db.yazarlar;
+import database.DB.idefix_db.yeniler;
 import database.putter;
 import database.selector;
 
@@ -60,9 +64,6 @@ public class parser {
 
 	protected void finalize() {
 
-		// out.flush();
-		// out.close();
-
 		try {
 			super.finalize();
 		} catch (Throwable e) {
@@ -70,33 +71,62 @@ public class parser {
 		}
 	}
 
-	public Document get_sayfa(String url, Integer Sayfa_No) throws IOException {
-		Map<String, String> data = new HashMap<String, String>();
-		data.put("kisiid", "");
-		data.put("tree", "");
-		data.put("query", "");
-		data.put("fid", "8827");
-		data.put("dzid", "");
-		data.put("sira", "0");
+	public Document get_sayfa(String url, Map<String, String> data,
+			Integer Sayfa_No) {
+		/*
+		 * Map<String, String> data = new HashMap<String, String>();
+		 * data.put("kisiid", ""); data.put("tree", ""); data.put("query", "");
+		 * data.put("fid", "8827"); data.put("dzid", ""); data.put("sira", "0");
+		 * data.put("sayfa", Sayfa_No.toString());
+		 */
 		data.put("sayfa", Sayfa_No.toString());
-		Document doc = Jsoup.connect(url).timeout(0).ignoreHttpErrors(true)
-				.data(data).post();
-
-		Elements sayfa_sayi = doc.select("div.pagingbox > a[href]");
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).data(data).post();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).data(data).post();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
 		return doc;
 	}
 
-	public Integer get_sayfa_sayisi(String url, Map<String, String> data)
-			throws IOException {
-		//////System.out.print("ic_url:" + url);
+	public Integer get_sayfa_sayisi(String url, Map<String, String> data) {
+		// ////System.out.print("ic_url:" + url);
 		Integer sayfa_sayisi = new Integer(0);
-		Document doc = Jsoup.connect(url).timeout(0).data(data).post();
+
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).timeout(0).data(data).post();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
+
 		Elements sayfa_sayi = doc.select("div.pagingbox > a[href]");
 		if (!sayfa_sayi.isEmpty()) {
 			for (Element no : sayfa_sayi)
 				sayfa_sayisi++;
 			sayfa_sayisi = sayfa_sayisi / 2;
-			// gerelki//////System.out.println("Sayfa sayisi, ic:" + sayfa_sayisi);
 		} else
 			sayfa_sayisi = 1;
 		return sayfa_sayisi;
@@ -136,12 +166,15 @@ public class parser {
 
 	public Map<String, String> get_Map(String url, String tur, String sayfa_no) {
 		Map<String, String> data = new HashMap<String, String>();
-		String[] inputs = get_Data(url);
+		String[] inputs = null;
+		if (cok_satanlar.name().compareTo(tur) != 0
+				&& yeniler.name().compareTo(tur) != 0)
+			inputs = get_Data(url);
 		if (tur.compareTo(Turler.kategori) == 0) {
 			data.put("kisiid", "");
 			data.put("tree", inputs[1]);
 			data.put("query", "");
-			data.put("fid", "8827");
+			data.put("fid", "");
 			data.put("dzid", "");
 			data.put("sira", "0");
 			data.put("sayfa", sayfa_no);
@@ -169,21 +202,34 @@ public class parser {
 			data.put("dzid", "");
 			data.put("sira", "0");
 			data.put("sayfa", sayfa_no);
-		}
+		} else if (cok_satanlar.name().compareTo(tur) == 0)
+			data.put("sayfa", sayfa_no);
+		else if (yeniler.name().compareTo(tur) == 0)
+			data.put("sayfa", sayfa_no);
 		return data;
 
 	}
 
-	public void get_alphabetList(String url) throws IOException {
+	public void get_alphabetList(String url) {
 		alphabetList = new LinkedList<Object[]>();
-		putter put=new putter();
+		putter put = new putter();
 		Object[] temp = new Object[2];
+		boolean flag = true;
 		Document doc = null;
-
-		try {
-			doc = Jsoup.connect(url).timeout(0).get();
-		} catch (IOException e) {
-			e.printStackTrace();
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
 		}
 		Elements alphabet = doc.select("a[href].poster");
 		temp[0] = "harf";
@@ -208,24 +254,43 @@ public class parser {
 				temp = new Object[2];
 			}
 		}
+		for (Object[] object : alphabetList)
+			System.out.println(object[0].toString() + " "
+					+ object[1].toString());
 		try {
-			put.put_in(idefixMeta_db.name(), idefixMeta_db.alfabe.name(), alphabetList);
+			put.put_in(idefixMeta_db.name(), idefixMeta_db.alfabe.name(),
+					alphabetList);
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
-		
+
 	}
 
-	public void get_kategoriler(String url) throws IOException {
+	public void get_kategoriler(String url) {
 		Object[] temp = new Object[3];
-		putter put=new putter();
+		putter put = new putter();
 		kitapTurList = new LinkedList<Object[]>();
 		String attributeKey = "abs:href";
-		Document doc = null;
 		String ust_baslik = "isimsiz";
-		doc = Jsoup.connect(url).timeout(0).get();
+
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
+
 		Elements kategori = doc.select("a[href].txt2,a[href].kitap");
 		temp[0] = "kategori_ust";
 		temp[1] = "kategori_alt";
@@ -252,15 +317,29 @@ public class parser {
 			put.put_in(Conn.idefix_db, Conn.tb_kategoriler, kitapTurList);
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
 	}
 
-	public LinkedList<Integer> get_kategori(String url) throws IOException {
+	public LinkedList<Integer> get_kategori(String url) {
 
+		boolean flag = true;
 		Document doc = null;
-		doc = Jsoup.connect(url).timeout(0).get();
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
+
 		Elements kategori = doc.select("div.tanimaltmargin > ul.aliste > li");
 		ResultSet rs = null;
 		LinkedList<Integer> kategori_id_list = new LinkedList<Integer>();
@@ -279,100 +358,130 @@ public class parser {
 		return kategori_id_list;
 	}
 
-	public void get_diziler(String yayinevi, String url) throws IOException {
+	public void get_diziler(String yayinevi, String url) {
 
-		Document doc = null;
 		selector sel = new selector();
-		putter put=new putter();
-		doc = Jsoup.connect(url).timeout(0).get();
+		putter put = new putter();
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
+
 		Elements diziler = doc.select("ul.cliste > li > a[href]");
-		//Elements yayinevi = doc.select("div.contenttitle > a[href]");
-		LinkedList<Object[]> data=new LinkedList<Object[]>();
-		Integer id_yayinevi = 0;
+		
+		LinkedList<Object[]> data = new LinkedList<Object[]>();
+		Integer id_yayinevi = DB.idefix_db.yayinevleri.default_id();
 		try {
-			id_yayinevi = sel.return_selectedId(idefix_db.name(), yayinevleri
-					.name(), yayinevleri.ad(), yayinevi,
-					Conn.user, Conn.pswd);
+
+			id_yayinevi = sel.return_selectedId(idefix_db.name(),
+					yayinevleri.name(), yayinevleri.ad(), yayinevi, Conn.user,
+					Conn.pswd);
+		} catch (IOException e) {
+			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 
 		Object[] rows = new Object[database.DB.idefix_db.diziler.sutun_sayisi() - 1];
 		rows[0] = idefix_db.diziler.ad_dizi();
 		rows[1] = idefix_db.diziler.id_yayinevi();
 		rows[2] = idefix_db.diziler.url();
 		data.add(rows);
-		
+
 		for (Element kat : diziler) {
 			rows = new Object[database.DB.idefix_db.diziler.sutun_sayisi() - 1];
 
 			rows[0] = (String) kat.text().trim();
 			rows[1] = (Integer) id_yayinevi;
 			rows[2] = kat.attr("abs:href");
-			////System.out.println("rows[0]: "+rows[0]);
-			////System.out.println("rows[1]: "+rows[1]);
-			////System.out.println("rows[2]: "+rows[2]);
 			data.add(rows);
 		}
 		try {
 			put.put_in(idefix_db.name(), idefix_db.diziler.name(), data);
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} catch (InterruptedException e) {			
-			e.printStackTrace();
 		}
-	
-	}
-	
-	public void set_dizi_yayin(String url,Integer id_yayin,Integer id_yayinevi ) throws IOException {
 
-		Document doc = null;
+	}
+
+	public void set_dizi_yayin(String url, Integer id_yayin, Integer id_yayinevi) {
+
 		selector sel = new selector();
-		putter put=new putter();
-		doc = Jsoup.connect(url).timeout(0).get();
-		Elements yayin_dizisi=doc.select("div.hreview-aggregate > div > a[href]");
-		LinkedList<Object[]> data=new LinkedList<Object[]>();
-		Integer id_dizi=0;
-		String dizi="dizisiz";
-		
+		putter put = new putter();
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
+
+		Elements yayin_dizisi = doc
+				.select("div.hreview-aggregate > div > a[href]");
+		LinkedList<Object[]> data = new LinkedList<Object[]>();
+		Integer id_dizi = idefix_db.diziler.default_id();
+		String dizi = "dizisiz";
+
 		Object[] rows = new Object[2];
 		Object[] data_contents = new Object[2];
 		rows[0] = idefix_db.diziler.ad_dizi();
-		rows[1] = idefix_db.diziler.id_yayinevi();		
+		rows[1] = idefix_db.diziler.id_yayinevi();
 		data.add(rows);
-		
-		for(Element yayin_dizi:yayin_dizisi){
-			if(yayin_dizi.attr("abs:href").contains("dzid"))
-				dizi=yayin_dizi.text();			
+
+		for (Element yayin_dizi : yayin_dizisi) {
+			if (yayin_dizi.attr("abs:href").contains("dzid"))
+				dizi = yayin_dizi.text();
 		}
 
-		
-		data_contents[0]=dizi;
-		data_contents[1]=id_yayinevi;
-	//	System.out.println(url+" "+dizi+" "+id_yayinevi);
-		id_dizi=sel.return_select_id_with_where(rows, idefix_db.name(), idefix_db.diziler.name(), data_contents, Conn.user, Conn.pswd);
-		
-		data=new LinkedList<Object[]>();
-		rows=new Object[idefix_db.dizi_yayin.sutun_sayisi()];
+		data_contents[0] = dizi;
+		data_contents[1] = id_yayinevi;
+		id_dizi = sel.return_select_id_with_where(rows, idefix_db.name(),
+				idefix_db.diziler.name(), data_contents, Conn.user, Conn.pswd);
+
+		data = new LinkedList<Object[]>();
+		rows = new Object[idefix_db.dizi_yayin.sutun_sayisi()];
 		data.add(dizi_yayin.get_rows());
-		rows=new Object[idefix_db.dizi_yayin.sutun_sayisi()];
-		rows[0]=id_dizi;
-				rows[1]=id_yayin;
+		rows = new Object[idefix_db.dizi_yayin.sutun_sayisi()];
+		rows[0] = id_dizi;
+		rows[1] = id_yayin;
 		data.add(rows);
 		try {
 			put.put_in(idefix_db.name(), dizi_yayin.name(), data);
 		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
+			for (Object[] objec : data)
+				for (Object obj : objec)
+					System.out.println("set_dizi_yayin: " + obj);
 			e.printStackTrace();
 		}
-	
+
 	}
 
 	public void get_yayinevleri_ilk(String url) throws IOException,
 			SQLException, InterruptedException {
-		
+
 		putter put = new putter();
 		Object[] temp = new Object[3];
 		yayin_evi_list = new LinkedList<Object[]>();
@@ -380,19 +489,54 @@ public class parser {
 		Trim tr = new Trim();
 		temp = new Object[DB.idefix_db.yayinevleri.sutun_sayisi() - 1];
 
-		Document doc = Jsoup.connect(url).timeout(0).get();
-
+		boolean flag = true;
+		Document doc = null;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
 
 		Document doc2 = null;
 
 		Elements yayin_evleri = doc.select("div.isimkutu > a[href]");
 
-		Element eser_sayisi;
+		Element eser_sayisi = null;
 		for (Element yayin_evi : yayin_evleri) {
 
-			doc2 = Jsoup.connect(yayin_evi.attr("abs:href")).timeout(0).get();
-			eser_sayisi = doc2.select("div.contenttitle").after("a[href]")
-					.after("b").get(0);
+			flag = true;
+			while (flag) {
+				try {
+					doc2 = Jsoup.connect(yayin_evi.attr("abs:href")).get();
+					flag = false;
+				} catch (IOException e) {
+					try {
+						Thread.sleep(1000);
+						doc = Jsoup.connect(url).get();
+						flag = false;
+					} catch (IOException e1) {
+					} catch (InterruptedException e2) {
+					}
+					flag = true;
+				}
+			}
+			try {
+				eser_sayisi = doc2.select("div.contenttitle").after("a[href]")
+						.after("b").get(0);
+			} catch (Exception e) {
+				System.out.println("url: " + url);
+				System.out.println(doc.baseUri());
+			}
 			if (eser_sayisi.hasText()) {
 			}
 			temp[0] = yayin_evi.text().replace("\'", "");
@@ -403,7 +547,7 @@ public class parser {
 			put.put_in(idefix_db.name(), yayinevleri.name(), yayin_evi_list);
 			yayin_evi_list = new LinkedList<Object[]>();
 			yayin_evi_list.add(DB.idefix_db.yayinevleri.get_rows());
-			get_diziler(temp[0].toString(), temp[2].toString());			
+			get_diziler(temp[0].toString(), temp[2].toString());
 			temp = new Object[3];
 		}
 	}
@@ -414,20 +558,27 @@ public class parser {
 	// String tur="yayinevi";
 	// ya da
 	// String tur="kategori"
-	public void get_kitap_url(String url, String tur) throws Exception {
+	public void get_kitap_url(String url, String tur) {
 		kitap_url_list = new LinkedList<Object[]>();
-		putter put=new putter();
-		String url_proper = new String(tanimkat(url));
+		putter put = new putter();
+		Map<String, String> data = new HashMap<String, String>();
+		String url_proper = null;
+		try {
+			url_proper = new String(tanimkat(url));
+		} catch (IOException e) {
+			System.out.println("url_proper: " + url_proper);
+			e.printStackTrace();
+		}
 		Object[] temp = new Object[2];
 		temp[0] = tur;
 		temp[1] = "url";
 		kitap_url_list.add(temp);
 		temp = new Object[2];
-		Integer sayfa_sayisi = this.get_sayfa_sayisi(url_proper,
-				get_Map(url_proper, tur, "1"));
+		data = get_Map(url_proper, tur, "1");
+		Integer sayfa_sayisi = this.get_sayfa_sayisi(url_proper, data);
 
 		for (Integer sayfa_no = 1; sayfa_no <= sayfa_sayisi; sayfa_no++) {
-			Document doc = this.get_sayfa(url_proper, sayfa_no);
+			Document doc = this.get_sayfa(url_proper, data, sayfa_no);
 
 			// Kitap url'si için
 			Elements url_satir2 = doc.select("div.listeurun > a[href]");
@@ -436,26 +587,37 @@ public class parser {
 				url_satir3 = doc.select("div.listeurun ~ i > a");
 			else
 				url_satir3 = doc.select("a[href].muzik");
+			try {
+				for (int i = 0; i < url_satir2.size() - 1; i++) {
+					if (tur == Turler.yayinevi)
+						temp[0] = url_satir3.get(i).text();
+					else
+						temp[0] = url_satir3.get(1).text();
+					temp[1] = url_satir2.get(i).attr("abs:href");
+					kitap_url_list.add(temp);
+					temp = new Object[2];
 
-			for (int i = 0; i < url_satir2.size() - 1; i++) {
-				if (tur == Turler.yayinevi)
-					temp[0] = url_satir3.get(i).text();
-				else
-					temp[0] = url_satir3.get(1).text();
-				temp[1] = url_satir2.get(i).attr("abs:href");
-				kitap_url_list.add(temp);
-				temp = new Object[2];
-
+				}
+			} catch (Exception e) {
+				System.out.println("url_proper: " + url_proper);
+				e.printStackTrace();
 			}
 		}
-		if(tur==Turler.yayinevi)
-		put.put_in(Conn.idefixMeta_db, Conn.tb_kitap_yay_url, kitap_url_list);
-		else
-			put.put_in(Conn.idefixMeta_db, Conn.tb_kitap_kat_url, kitap_url_list);
+
+		try {
+			if (tur == Turler.yayinevi)
+				put.put_in(Conn.idefixMeta_db, Conn.tb_kitap_yay_url,
+						kitap_url_list);
+			else
+				put.put_in(Conn.idefixMeta_db, Conn.tb_kitap_kat_url,
+						kitap_url_list);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
+
 	}
 
-	public void get_kitap_ayrinti(String url, int row_id) throws SQLException,
-			IOException, InterruptedException {
+	public void get_kitap_ayrinti(String url, int row_id) {
 		kitap_ayrinti = new LinkedList<Object[]>();
 		kitap_yazarList = new LinkedList<Object[]>();
 		List<Object[]> yayinevi_yeni = new LinkedList<Object[]>();
@@ -466,11 +628,12 @@ public class parser {
 		Object[] temp = new Object[DB.idefix_db.yayinlar.sutun_sayisi() - 1];
 		Object[] yayinevi_temp = new Object[DB.idefix_db.yayinevleri
 				.sutun_sayisi() - 1];
-		Element eser_sayisi;
-		Integer id_yayin = null;
-		Integer id_yayinevi = null;
+		Element eser_sayisi = null;
+		Integer id_yayin = idefix_db.yayinlar.default_id();
+		Integer id_yayinevi = idefix_db.yayinevleri.default_id();
 		LinkedList<Integer> kategori_id_List = new LinkedList<Integer>();
 		LinkedList<Object[]> kategori_yayin = new LinkedList<Object[]>();
+		LinkedList<Object[]> yayin_yayinevi = new LinkedList<Object[]>();
 		LinkedList<String> yazar_ad_list = new LinkedList<String>();
 		LinkedList<Integer> yazar_id_list = new LinkedList<Integer>();
 		String[] temp_yayinevi_dizi = new String[2];
@@ -484,14 +647,32 @@ public class parser {
 			kitap_ayrinti.add(DB.idefix_db.yayinlar.get_rows());
 		}
 		Document doc = null;
-		try {
-			doc = Jsoup.connect(url).timeout(0).get();
-		} catch (Throwable e) {
-			e.printStackTrace();
+		boolean flag = true;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
 		}
-		// ilk parametre kitap adları için
-		Element ad_kitap = doc.select("div.boxTanimisim > div").get(0);
-
+		Element ad_kitap = null;
+		try {
+			// ilk parametre kitap adları için
+			ad_kitap = doc.select("div.boxTanimisim > div").get(0);
+		} catch (Exception e) {
+			System.out
+					.println("parser-> kitap_ayrinti -> Kitap adi alinamadi.");
+			System.out.println("url: " + url);
+			return;
+		}
 		Element adIkinci_kitap = null;
 		temp[1] = "yok";
 		// Eğer get(1) null değilse get(1) ikinci ad için
@@ -502,11 +683,10 @@ public class parser {
 
 		// Yazar adı için
 		Elements ad_yazar = doc.select("div.boxTanimVideo");
-		
 
 		// Yayınevi adı için
 		Element ad_yayinevi = doc.select("h3.boxTanimyayinevi").get(0);
-		Elements yayin_dizisi=doc.select("div.hreview-aggregate > a[href]");
+		Elements yayin_dizisi = doc.select("div.hreview-aggregate > a[href]");
 		// Tanıtım yazısı için
 		Element tanitim = null;
 		temp[3] = "tanıtım yazısı yok";
@@ -536,40 +716,93 @@ public class parser {
 			list_yazar = new LinkedList<Object[]>();
 			list_yazar.add(DB.idefix_db.yazarlar.get_rows());
 			list_yazar.add(string_yazar);
-			put.put_in(Conn.idefix_db, Conn.tb_yazarlar, list_yazar);
+			try {
+				put.put_in(Conn.idefix_db, Conn.tb_yazarlar, list_yazar);
+			} catch (PSQLException e) {
+				e.printStackTrace();
+			}
 
 			// Henüz veritabanına eklenen yazarın id'sini alıp bir listede
 			// tutarız.
-			yazar_id_list.add(sel.return_selectedId(Conn.idefix_db,
-					Conn.tb_yazarlar, yazarlar.ad(),
-					string_yazar[0].toString(), Conn.user, Conn.pswd));
+			try {
+				yazar_id_list.add(sel.return_selectedId(Conn.idefix_db,
+						Conn.tb_yazarlar, yazarlar.ad(),
+						string_yazar[0].toString(), Conn.user, Conn.pswd));
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 			string_yazar = new Object[2];
 		}
 
-		// gerelki//////System.out.println("ad_yayinevi.text() "+ad_yayinevi.text());
 		temp_yayinevi_dizi = tr.trim_dizi(ad_yayinevi.text());
-		// gerelki//////System.out.println("temp_yayinevi_dizi[0]: "+temp_yayinevi_dizi[0]);
-		id_yayinevi = sel.return_selectedId(Conn.idefix_db,
-				Conn.tb_yayinevleri, "ad", temp_yayinevi_dizi[0], Conn.user,
-				Conn.pswd);
+		try {
+			id_yayinevi = sel.return_selectedId(Conn.idefix_db,
+					Conn.tb_yayinevleri, "ad", temp_yayinevi_dizi[0],
+					Conn.user, Conn.pswd);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		if (id_yayinevi == null) {
 			yayinevi_temp[0] = temp_yayinevi_dizi[0];
 			yayinevi_temp[2] = doc.select("h3.boxTanimyayinevi > a[href]")
 					.get(0).attr("abs:href")
 					.replace("firma.asp", "firma_urun_listele.asp");
-			eser_sayisi = Jsoup.connect(yayinevi_temp[2].toString()).timeout(0)
-					.get().select("div.contenttitle").after("a[href]")
-					.after("b").get(0);
+			// Yeni bir yayınevi bulundu.
+			// Bu yayinevinin kitaplarını idefixMeta_db.kitap_kat_url tablosuna
+			// ekleyeceğim.
+			try {
+				get_kitap_url(yayinevi_temp[2].toString(), Turler.kategori);
+			} catch (Exception e3) {
+				e3.printStackTrace();
+			}
+			// burdan itibaren while bitene kadar bağlantıyı sağlayıp kaynak
+			// kodunu almaya çalışıyor.
+			flag = true;
+			while (flag) {
+				try {
+					eser_sayisi = Jsoup.connect(yayinevi_temp[2].toString())
+							.timeout(0).get().select("div.contenttitle")
+							.after("a[href]").after("b").get(0);
+					flag = false;
+				} catch (IOException e) {
+					try {
+						Thread.sleep(1000);
+						eser_sayisi = Jsoup
+								.connect(yayinevi_temp[2].toString())
+								.timeout(0).get().select("div.contenttitle")
+								.after("a[href]").after("b").get(0);
+						flag = false;
+					} catch (IOException e1) {
+					} catch (InterruptedException e2) {
+					}
+					flag = true;
+				}
+			}
+
 			yayinevi_temp[1] = tr.trim_urun_sayisi(eser_sayisi.text());
 			yayinevi_yeni.add(DB.idefix_db.yayinevleri.get_rows());
 			yayinevi_yeni.add(yayinevi_temp);
-			put.put_in(DB.idefix_db.name(), DB.idefix_db.yayinevleri.name(),
-					yayinevi_yeni);
+			try {
+				put.put_in(DB.idefix_db.name(),
+						DB.idefix_db.yayinevleri.name(), yayinevi_yeni);
+			} catch (PSQLException e) {
+				e.printStackTrace();
+			}
 			yayinevi_temp = new Object[DB.idefix_db.yayinevleri.sutun_sayisi() - 1];
-			id_yayinevi = sel.return_selectedId(Conn.idefix_db,
-					Conn.tb_yayinevleri, "ad", temp_yayinevi_dizi[0],
-					Conn.user, Conn.pswd);
+			try {
+				id_yayinevi = sel.return_selectedId(Conn.idefix_db,
+						Conn.tb_yayinevleri, "ad", temp_yayinevi_dizi[0],
+						Conn.user, Conn.pswd);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		temp[2] = id_yayinevi;
 
@@ -580,8 +813,12 @@ public class parser {
 		temp[4] = ad_kitap.baseUri();
 
 		kitap_ayrinti.add(temp);
-		//System.out.println("kitap_ayrinti.size(): "+kitap_ayrinti.size()+" "+temp[0] );
-		put.put_in(Conn.idefix_db, Conn.tb_yayinlar, kitap_ayrinti);
+
+		try {
+			put.put_in(Conn.idefix_db, Conn.tb_yayinlar, kitap_ayrinti);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
 
 		kitap_ayrinti = new LinkedList<Object[]>();
 
@@ -595,67 +832,101 @@ public class parser {
 			kitap_yazarList.add(temp);
 		}
 		// yazar_yayin tablosunu doldurmak için
-		put.put_in(idefix_db.name(), yazar_yayin.name(), kitap_yazarList);
+		try {
+			put.put_in(idefix_db.name(), yazar_yayin.name(), kitap_yazarList);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
 		kitap_yazarList = new LinkedList<Object[]>();
+
+		// yayin_yayinevi tablosunu doldurmak için
+		temp = new Object[idefix_db.yayin_yayinevi.sutun_sayisi()];
+		yayin_yayinevi.add(idefix_db.yayin_yayinevi.get_rows());
+		temp[0] = id_yayin;
+		temp[1] = id_yayinevi;
+		yayin_yayinevi.add(temp);
+		try {
+			put.put_in(idefix_db.name(), idefix_db.yayin_yayinevi.name(),
+					yayin_yayinevi);
+		} catch (PSQLException e1) {
+			e1.printStackTrace();
+		}
 
 		// kategori_yayin tablosunu doldurmak için
 		kategori_id_List = get_kategori(url);
 		temp = new Object[idefix_db.yayin_kategori.sutun_sayisi()];
 		kategori_yayin.add(yayin_kategori.get_rows());
 		for (Integer id_kategori : kategori_id_List) {
-			temp[0] = (Integer) id_yayin;
-			temp[1] = (Integer) id_kategori;
+			if (id_yayin != null)
+				temp[0] = (Integer) id_yayin;
+			else
+				temp[0] = (Integer) yayinlar.default_id();
+			if (id_kategori != null)
+				temp[1] = (Integer) id_kategori;
+			else
+				temp[1] = (Integer) kategoriler.default_id();
 			kategori_yayin.add(temp);
 			temp = new Object[idefix_db.yayin_kategori.sutun_sayisi()];
 		}
-		put.put_in(idefix_db.name(), yayin_kategori.name(), kategori_yayin);
+		try {
+			put.put_in(idefix_db.name(), yayin_kategori.name(), kategori_yayin);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
 		kategori_yayin = new LinkedList<Object[]>();
-		set_dizi_yayin(url,id_yayin,id_yayinevi);
+		set_dizi_yayin(url, id_yayin, id_yayinevi);
 		temp = new Object[yayinlar.sutun_sayisi() - 1];
 	}
 
 	public void get_diziler1(String yayinevi, String url) throws IOException,
 			SQLException {
 		dizilist = new LinkedList<Object[]>();
-		Document doc = Jsoup.connect(url).timeout(0).get();
+		Document doc = null;
+		boolean flag = true;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
+		}
 		Object[] temp = new Object[3];
 		temp[0] = "ad_dizi";
 		temp[1] = "id_yayinevi";
 		temp[2] = "url";
 		dizilist.add(temp);
 		temp = new Object[3];
-		Integer id_yayinevi = null;
+		Integer id_yayinevi = yayinevleri.default_id();
 		Elements diziler = doc.select("ul.cliste > a[href]");
 		selector sel = new selector();
 
 		for (Element dizi : diziler) {
-			// gerelki//////System.out.println(url);
-			// gerelki//////System.out.println("PARSER-> " + dizi.toString() + " "
-			// + dizi.attributes());
-			// out.newLine();
-			// out.write("PARSER-> " + dizi.text());
 			temp[0] = dizi.text();
 			id_yayinevi = sel.return_selectedId(Conn.idefix_db,
 					Conn.tb_yayinevleri, "ad", yayinevi, Conn.user, Conn.pswd);
-			// out.newLine();
-			// out.write("PARSER-> " + id_yayinevi);
 			temp[1] = id_yayinevi;
-			// out.newLine();
-			// out.write("PARSER-> " + dizi.attr("abs:href"));
+
 			temp[2] = dizi.attr("abs:href");
 			dizilist.add(temp);
 			temp = new Object[3];
 		}
 	}
 
-	public void set_diziler(String ad_yayinevi, String ad_dizi)
-			throws IOException, SQLException, InterruptedException {
+	public void set_diziler(String ad_yayinevi, String ad_dizi) {
 		selector sel = new selector();
 		putter put = new putter();
 		List<Object[]> data = new LinkedList<Object[]>();
 		Object[] temp = new Object[2];
 		String[] rows = new String[1];
-		Integer id_yayinevi = null;
+		Integer id_yayinevi = DB.idefix_db.yayinevleri.default_id();
 		temp[0] = "ad_dizi";
 		temp[1] = "id_yayinevi";
 		data.add(temp);
@@ -664,16 +935,99 @@ public class parser {
 
 		rows[0] = ad_yayinevi;
 		// gerelki//////System.out.println("ad_yayinevi: "+ad_yayinevi);
-		id_yayinevi = sel.return_selectedId(Conn.idefix_db,
-				Conn.tb_yayinevleri, "ad", ad_yayinevi, Conn.user, Conn.pswd);
+		try {
+			id_yayinevi = sel.return_selectedId(Conn.idefix_db,
+					Conn.tb_yayinevleri, "ad", ad_yayinevi, Conn.user,
+					Conn.pswd);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		temp[0] = ad_dizi;
 		temp[1] = id_yayinevi;
 		// gerelki//////System.out.println("Set_diziler.temp[0]"+temp[0]);
 		// gerelki//////System.out.println("Set_diziler.temp[1]"+temp[1]);
 		data.add(temp);
-		put.put_in(Conn.idefix_db, Conn.tb_diziler, data);
+		try {
+			put.put_in(Conn.idefix_db, Conn.tb_diziler, data);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
 		temp = new Object[2];
+
+	}
+
+	public void get_gunceller(String url, String tur) {
+		LinkedList<Object[]> data = new LinkedList<Object[]>();
+		Object[] rows = new Object[1];
+		Object[] data_content = new Object[1];
+		rows[0] = yayinlar.url();
+		putter put = new putter();
+		selector sel = new selector();
+
+		String url_proper = null;
+		try {
+			url_proper = new String(tanimkat(url));
+		} catch (IOException e) {
+			System.out.println("url_proper: " + url_proper);
+			e.printStackTrace();
+		}
+		Object[] temp = new Object[1];
+		temp[0] = "id_yayin";
+
+		data.add(temp);
+		temp = new Object[1];
+
+		Integer sayfa_sayisi = this.get_sayfa_sayisi(url_proper,
+				get_Map(url_proper, tur, "1"));
+		for (Integer sayfa_no = 1; sayfa_no <= sayfa_sayisi; sayfa_no++) {
+			Document doc = null;
+			try {
+				doc = Jsoup.connect(url_proper)
+						.data("sayfa", sayfa_no.toString()).post();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+
+			// Kitap url'si için
+			Elements url_satir2 = doc.select("div.listeurun > a[href]");
+
+			try {
+				for (int i = 0; i < url_satir2.size() - 1; i++) {
+					data_content[0] = url_satir2.get(i).attr("abs:href");
+					temp[0] = sel.return_select_id_with_where(rows,
+							idefix_db.name(), yayinlar.name(), data_content,
+							Conn.user, Conn.pswd);
+
+					if (temp[0].toString().length() > 0
+							|| temp[0].toString().isEmpty()) {
+						// if(true){
+						get_kitap_ayrinti(data_content[0].toString(), 0);
+						temp = new Object[1];
+						temp[0] = sel.return_select_id_with_where(rows,
+								idefix_db.name(), yayinlar.name(),
+								data_content, Conn.user, Conn.pswd);
+					}
+					data.add(temp);
+					temp = new Object[1];
+					data_content = new Object[1];
+				}
+			} catch (Exception e) {
+				System.out.println("url_proper: " + url_proper);
+				e.printStackTrace();
+			}
+		}
+
+		try {
+			if (tur.compareTo(cok_satanlar.name()) == 0)
+				put.put_in(idefix_db.name(), cok_satanlar.name(), data);
+			else if (tur.compareTo(yeniler.name()) == 0)
+				put.put_in(idefix_db.name(), yeniler.name(), data);
+		} catch (PSQLException e) {
+			e.printStackTrace();
+		}
 
 	}
 
@@ -683,10 +1037,21 @@ public class parser {
 		// gerelki//////System.out.println("tanimkat->URL: " + url);
 		String ret_url = url;
 		Document doc = null;
-		try {
-			doc = Jsoup.connect(url).timeout(0).get();
-		} catch (IOException e) {
-			e.printStackTrace();
+		boolean flag = true;
+		while (flag) {
+			try {
+				doc = Jsoup.connect(url).get();
+				flag = false;
+			} catch (IOException e) {
+				try {
+					Thread.sleep(1000);
+					doc = Jsoup.connect(url).get();
+					flag = false;
+				} catch (IOException e1) {
+				} catch (InterruptedException e2) {
+				}
+				flag = true;
+			}
 		}
 		// gerelki//////System.out.println("tanimkat_is_empty: "
 		// + doc.select("div.tanimkat > a[href]").isEmpty());

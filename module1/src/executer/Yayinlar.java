@@ -12,8 +12,6 @@ public class Yayinlar extends Basic_Class{
 	
 	public Yayinlar(String FileName)throws IOException{
 		super(FileName);
-		
-		//out.write("abx");out.newLine();
 		rows=new String[1];
 		rows[0]=DB.idefixMeta_db.kitap_yay_url.url();
 	}
@@ -41,12 +39,6 @@ public class Yayinlar extends Basic_Class{
 				} catch (SQLException e) {
 					
 					e.printStackTrace();
-				} catch (IOException e) {
-					
-					e.printStackTrace();
-				} catch (InterruptedException e) {
-					
-					e.printStackTrace();
 				}
 
 				
@@ -72,16 +64,8 @@ public class Yayinlar extends Basic_Class{
 			while(rs.next())
 			{				
 				par.get_kitap_ayrinti(rs.getString(1),row_id);
-
 			}
 		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			
 			e.printStackTrace();
 		}
 
@@ -100,18 +84,23 @@ public class Yayinlar extends Basic_Class{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		Integer Offset=89;
-		Integer Limit=0;
+		Integer Offset=27583;
+		Integer Limit=10;
 		try {
-			Limit=sel.return_count(idefixMeta_db.name(),idefixMeta_db.kitap_yay_url.name(), Conn.user, Conn.pswd)/9;
+			Limit=sel.return_count(idefixMeta_db.name(),idefixMeta_db.kitap_url.name(), Conn.user, Conn.pswd);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		for(int i=Offset;i<Limit-Offset;i++){
+		for(int i=Offset;i<Limit;i++){
 			System.out.println("i: "+i);
-		yayinlar.executor_with_limit(1, i);
+		try{
+			yayinlar.executor_with_limit(1, i);
+			}catch(Exception e){
+				Offset--;
+			}
+		
 		}
 	
 

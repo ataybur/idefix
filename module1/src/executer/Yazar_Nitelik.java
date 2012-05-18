@@ -64,13 +64,7 @@ public class Yazar_Nitelik extends Basic_Class {
 						rows[3] = (Integer) 1;
 						data.add(rows);
 					}
-					try {
-						put.put_in(idefix_db.name(), yazar_nitelik.name(), data);
-					} catch (IOException e) {
-						e.printStackTrace();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+					put.put_in(idefix_db.name(), yazar_nitelik.name(), data);
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();

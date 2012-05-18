@@ -34,10 +34,6 @@ public class Kitap_yay_url extends Basic_Class{
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -52,9 +48,9 @@ public class Kitap_yay_url extends Basic_Class{
 
 		Kitap_yay_url kyu=new Kitap_yay_url("deneme.txt");
 		Integer Limit=1;
-		Integer Offset=30;
+		Integer Offset=1447;
 		try {
-			Limit = sel.return_count(idefix_db.name(), yayinevleri.name(), Conn.user, Conn.pswd)-Offset;		
+			Limit = sel.return_count(idefix_db.name(), yayinevleri.name(), Conn.user, Conn.pswd);		
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

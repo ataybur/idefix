@@ -25,12 +25,7 @@ public class Kategoriler extends Basic_Class {
 	 * @throws SQLException 
 	 */
 	public void executor(Integer Limit, Integer Offset){
-		try {
-			par.get_kategoriler(url);
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}		
+		par.get_kategoriler(url);		
 
 		
 		try {
@@ -47,17 +42,9 @@ public class Kategoriler extends Basic_Class {
 			{		
 				par.get_kitap_url(rs.getString(1), "kategori");
 			}
-		} catch (SQLException e) {
-			
+		} catch (SQLException e) {			
 			e.printStackTrace();
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
-		} catch (Exception e) {
-			
+		} catch (Exception e) {			
 			e.printStackTrace();
 		}
 		
@@ -75,14 +62,14 @@ public class Kategoriler extends Basic_Class {
 		Integer Limit=0;
 		Integer Offset=0;
 		try {
-			Offset=124;
+			Offset=103;
 			Limit = sel.return_count(idefix_db.name(), kategoriler.name(), Conn.user, Conn.pswd)-Offset;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		System.out.println(Offset+" "+Limit);	
 		for(int i=Offset;i<=Limit+Offset;i++){
 			System.out.println(i);
 		kategori.executor(1,i);

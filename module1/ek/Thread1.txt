@@ -1,0 +1,1714 @@
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9142
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9143
+i: 9144
+i: 9145
+i: 9146
+i: 9147
+i: 9148
+i: 9149
+i: 9150
+i: 9151
+i: 9152
+i: 9153
+i: 9154
+i: 9155
+i: 9156
+i: 9157
+i: 9158
+i: 9159
+i: 9160
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9161
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9162
+i: 9163
+i: 9164
+i: 9165
+i: 9166
+i: 9167
+i: 9168
+i: 9169
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9170
+i: 9171
+i: 9172
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9173
+i: 9174
+i: 9175
+i: 9176
+i: 9177
+i: 9178
+i: 9179
+i: 9180
+i: 9181
+i: 9182
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9183
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9184
+i: 9185
+i: 9186
+i: 9187
+i: 9188
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9189
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9190
+i: 9191
+i: 9192
+i: 9193
+i: 9194
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9195
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9196
+i: 9197
+i: 9198
+i: 9199
+i: 9200
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9201
+i: 9202
+i: 9203
+i: 9204
+i: 9205
+i: 9206
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9207
+i: 9208
+i: 9209
+i: 9210
+i: 9211
+i: 9212
+i: 9213
+i: 9214
+i: 9215
+i: 9216
+i: 9217
+i: 9218
+i: 9219
+i: 9220
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9221
+i: 9222
+i: 9223
+i: 9224
+i: 9225
+i: 9226
+i: 9227
+i: 9228
+i: 9229
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9230
+i: 9231
+i: 9232
+i: 9233
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9234
+i: 9235
+i: 9236
+i: 9237
+i: 9238
+i: 9239
+i: 9240
+i: 9241
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9242
+i: 9243
+i: 9244
+i: 9245
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9246
+i: 9247
+i: 9248
+i: 9249
+i: 9250
+i: 9251
+i: 9252
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9253
+i: 9254
+i: 9255
+i: 9256
+i: 9257
+i: 9258
+i: 9259
+i: 9260
+i: 9261
+i: 9262
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9263
+i: 9264
+i: 9265
+i: 9266
+i: 9267
+i: 9268
+i: 9269
+i: 9270
+i: 9271
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9272
+i: 9273
+i: 9274
+i: 9275
+i: 9276
+i: 9277
+i: 9278
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9279
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9280
+i: 9281
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9282
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9283
+i: 9284
+i: 9285
+i: 9286
+i: 9287
+i: 9288
+i: 9289
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9290
+i: 9291
+i: 9292
+i: 9293
+i: 9294
+i: 9295
+i: 9296
+i: 9297
+i: 9298
+i: 9299
+i: 9300
+i: 9301
+i: 9302
+i: 9303
+i: 9304
+i: 9305
+i: 9306
+i: 9307
+i: 9308
+i: 9309
+i: 9310
+i: 9311
+i: 9312
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9313
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9314
+i: 9315
+i: 9316
+i: 9317
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9318
+i: 9319
+i: 9320
+i: 9321
+i: 9322
+i: 9323
+i: 9324
+i: 9325
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9326
+i: 9327
+i: 9328
+i: 9329
+i: 9330
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9331
+i: 9332
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9333
+i: 9334
+i: 9335
+i: 9336
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9337
+i: 9338
+i: 9339
+i: 9340
+i: 9341
+i: 9342
+i: 9343
+i: 9344
+i: 9345
+i: 9346
+i: 9347
+i: 9348
+i: 9349
+i: 9350
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9351
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9352
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9353
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9354
+i: 9355
+i: 9356
+i: 9357
+i: 9358
+i: 9359
+i: 9360
+i: 9361
+i: 9362
+i: 9363
+i: 9364
+i: 9365
+i: 9366
+i: 9367
+i: 9368
+i: 9369
+i: 9370
+i: 9371
+i: 9372
+i: 9373
+i: 9374
+i: 9375
+i: 9376
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9377
+i: 9378
+i: 9379
+i: 9380
+i: 9381
+i: 9382
+i: 9383
+i: 9384
+i: 9385
+i: 9386
+i: 9387
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9388
+i: 9389
+i: 9390
+i: 9391
+i: 9392
+i: 9393
+i: 9394
+i: 9395
+i: 9396
+i: 9397
+i: 9398
+i: 9399
+i: 9400
+i: 9401
+i: 9402
+i: 9403
+i: 9404
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9405
+i: 9406
+i: 9407
+i: 9408
+i: 9409
+i: 9410
+i: 9411
+i: 9412
+i: 9413
+i: 9414
+i: 9415
+i: 9416
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9417
+i: 9418
+i: 9419
+i: 9420
+i: 9421
+i: 9422
+i: 9423
+i: 9424
+i: 9425
+i: 9426
+i: 9427
+i: 9428
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9429
+i: 9430
+i: 9431
+i: 9432
+i: 9433
+i: 9434
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9435
+i: 9436
+i: 9437
+i: 9438
+i: 9439
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9440
+i: 9441
+i: 9442
+i: 9443
+i: 9444
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9445
+i: 9446
+i: 9447
+i: 9448
+i: 9449
+i: 9450
+i: 9451
+i: 9452
+i: 9453
+i: 9454
+i: 9455
+i: 9456
+i: 9457
+i: 9458
+i: 9459
+i: 9460
+i: 9461
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9462
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9463
+i: 9464
+i: 9465
+i: 9466
+i: 9467
+i: 9468
+i: 9469
+i: 9470
+i: 9471
+i: 9472
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9473
+i: 9474
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9475
+i: 9476
+i: 9477
+i: 9478
+i: 9479
+i: 9480
+i: 9481
+i: 9482
+i: 9483
+i: 9484
+i: 9485
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9486
+i: 9487
+i: 9488
+i: 9489
+i: 9490
+i: 9491
+i: 9492
+i: 9493
+i: 9494
+i: 9495
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9496
+i: 9497
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9498
+i: 9499
+i: 9500
+i: 9501
+i: 9502
+i: 9503
+i: 9504
+i: 9505
+i: 9506
+i: 9507
+i: 9508
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9509
+i: 9510
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9511
+i: 9512
+i: 9513
+i: 9514
+i: 9515
+i: 9516
+i: 9517
+i: 9518
+i: 9519
+i: 9520
+i: 9521
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9522
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9523
+i: 9524
+i: 9525
+i: 9526
+i: 9527
+i: 9528
+i: 9529
+i: 9530
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9531
+i: 9532
+i: 9533
+i: 9534
+i: 9535
+i: 9536
+i: 9537
+i: 9538
+i: 9539
+i: 9540
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9541
+i: 9542
+i: 9543
+i: 9544
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9545
+i: 9546
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9547
+i: 9548
+i: 9549
+i: 9550
+i: 9551
+i: 9552
+i: 9553
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9554
+i: 9555
+i: 9556
+i: 9557
+i: 9558
+i: 9559
+i: 9560
+i: 9561
+i: 9562
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9563
+i: 9564
+i: 9565
+i: 9566
+i: 9567
+i: 9568
+i: 9569
+i: 9570
+i: 9571
+i: 9572
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9573
+i: 9574
+i: 9575
+i: 9576
+i: 9577
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9578
+i: 9579
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9580
+i: 9581
+i: 9582
+i: 9583
+i: 9584
+i: 9585
+i: 9586
+i: 9587
+i: 9588
+i: 9589
+i: 9590
+i: 9591
+i: 9592
+i: 9593
+i: 9594
+i: 9595
+i: 9596
+i: 9597
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_kategori_fkey"
+  Detail: Key (id_kategori)=(0) is not present in table "kategoriler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9598
+i: 9599
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9600
+i: 9601
+i: 9602
+i: 9603
+i: 9604
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yazar_yayin" violates foreign key constraint "yazar_yayin_id_yayin_fkey"
+  Detail: Key (id_yayin)=(0) is not present in table "yayinlar".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:598)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "yayin_kategori" violates foreign key constraint "yayin_kategori_id_yayin_fkey"
+  Detail: Key (id_yayin)=(0) is not present in table "yayinlar".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.get_kitap_ayrinti(parser.java:611)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_yayin_fkey"
+  Detail: Key (id_yayin)=(0) is not present in table "yayinlar".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9605
+i: 9606
+i: 9607
+i: 9608
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9609
+i: 9610
+i: 9611
+i: 9612
+i: 9613
+i: 9614
+i: 9615
+i: 9616
+i: 9617
+i: 9618
+i: 9619
+i: 9620
+i: 9621
+i: 9622
+i: 9623
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9624
+i: 9625
+i: 9626
+i: 9627
+i: 9628
+i: 9629
+i: 9630
+i: 9631
+i: 9632
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9633
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9634
+i: 9635
+i: 9636
+i: 9637
+i: 9638
+i: 9639
+i: 9640
+i: 9641
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9642
+i: 9643
+i: 9644
+i: 9645
+i: 9646
+i: 9647
+i: 9648
+i: 9649
+i: 9650
+i: 9651
+i: 9652
+i: 9653
+i: 9654
+i: 9655
+i: 9656
+i: 9657
+i: 9658
+i: 9659
+i: 9660
+i: 9661
+i: 9662
+i: 9663
+i: 9664
+i: 9665
+i: 9666
+i: 9667
+i: 9668
+i: 9669
+i: 9670
+i: 9671
+i: 9672
+i: 9673
+i: 9674
+i: 9675
+i: 9676
+i: 9677
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9678
+i: 9679
+i: 9680
+i: 9681
+i: 9682
+i: 9683
+i: 9684
+i: 9685
+i: 9686
+i: 9687
+i: 9688
+i: 9689
+org.postgresql.util.PSQLException: ERROR: insert or update on table "dizi_yayin" violates foreign key constraint "dizi_yayin_id_dizi_fkey"
+  Detail: Key (id_dizi)=(0) is not present in table "diziler".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:388)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:334)
+	at database.putter.put_in(putter.java:108)
+	at parser.parser.set_dizi_yayin(parser.java:364)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+i: 9690
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "an"
+  Position: 48
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2103)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1836)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:512)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:374)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:254)
+	at database.selector.return_select_id_with_where(selector.java:302)
+	at parser.parser.set_dizi_yayin(parser.java:354)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)
+Exception in thread "main" java.lang.NullPointerException
+	at database.selector.return_select_id_with_where(selector.java:311)
+	at parser.parser.set_dizi_yayin(parser.java:354)
+	at parser.parser.get_kitap_ayrinti(parser.java:613)
+	at executer.Yayinlar.executor_with_limit(Yayinlar.java:74)
+	at executer.Thread1.main(Thread1.java:36)

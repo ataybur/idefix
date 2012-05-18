@@ -23,7 +23,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String url() {
 				return "url";
 			}
@@ -66,7 +72,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String url() {
 				return "url";
 			}
@@ -121,7 +133,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String url() {
 				return "url";
 			}
@@ -164,7 +182,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String url() {
 				return "url";
 			}
@@ -202,7 +226,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String ad() {
 				return "ad";
 			}
@@ -250,24 +280,19 @@ public final class DB {
 			public static String id_yayin() {
 				return "id_yayin";
 			}
-
-			public static String sira() {
-				return "sira";
-			}
+			
 
 			public static String tarih() {
 				return "tarih";
 			}
 
 			public static Integer sutun_sayisi() {
-				return 3;
+				return 2;
 			}
 
 			public static Object[] get_rows() {
-				Object[] rows = new String[sutun_sayisi()];
-				rows[0] = id_yayin();
-				rows[1] = sira();
-				rows[2] = tarih();
+				Object[] rows = new String[sutun_sayisi()-1];
+				rows[0] = id_yayin();				
 				return rows;
 			}
 
@@ -281,7 +306,13 @@ public final class DB {
 			public static String id() {
 				return "id";
 			}
-
+			public static Integer default_id() {
+				return 1;
+			}
+			public void restart_id(){
+				putter put=new putter();
+				put.restart_id(name());
+			}
 			public static String nitelik() {
 				return "nitelik";
 			}
@@ -489,9 +520,8 @@ public final class DB {
 			}
 
 			public static Object[] get_rows() {
-				Object[] rows = new String[sutun_sayisi()];
-				rows[0] = id_yayin();
-				rows[1] = tarih();
+				Object[] rows = new String[sutun_sayisi()-1];
+				rows[0] = id_yayin();				
 				return rows;
 			}
 		}
@@ -744,6 +774,25 @@ public final class DB {
 			}
 		}
 
+		public final static class kitap_url {
+			public static String name() {
+				return "kitap_url";
+			}
+
+			public static String url() {
+				return "url";
+			}
+
+			public static Integer sutun_sayisi() {
+				return 1;
+			}
+
+			public static Object[] get_rows() {
+				Object[] rows = new String[sutun_sayisi()];
+				rows[0]=url();
+				return rows;
+			}
+		}
 		public final static class kitap_kat_url {
 			public static String name() {
 				return "kitap_kat_url";
